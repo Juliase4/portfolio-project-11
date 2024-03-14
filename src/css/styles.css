@@ -16,3 +16,22 @@
 @import url('./reviews.css');
 @import url('./work-together.css');
 @import url('./modal-window.css');
+
+:root {
+  --background: #1c1d20;
+  --cards: #242527;
+  --arrow: #3b3b3b;
+  --accent-color: #ed3b44;
+  --main-text: #fafafa;
+}
+
+@font-face {
+  font-family: 'Inter Tight', sans-serif;
+  src: local('Inter Tight'), url(/src/fonts/InterTight-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: "Inter Tight", sans-serif;
+  background-color: var(--background);
+  color: var(--main-text);
+}

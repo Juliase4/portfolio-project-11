@@ -20,10 +20,6 @@ ul {
   list-style-type: none;
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
-
 .link {
   text-decoration: none;
 }
