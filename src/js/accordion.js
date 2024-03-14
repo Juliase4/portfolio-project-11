@@ -35,7 +35,7 @@ function createFaqElements(faqList, container){
 
     faqList.forEach(item => {
         const faqItem = `
-            <div class="faq-item">
+            <li class="faq-item">
                 <h3 class="faq-item__header">
                     <button type="button" class="faq-item__btn">${item.question}</button>
                 </h3>
@@ -44,7 +44,7 @@ function createFaqElements(faqList, container){
                         <p>${item.answer}</p>
                     </div>
                 </div>
-            </div>
+            </li>
         `;
         elementsList += faqItem;
     });
