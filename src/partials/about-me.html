@@ -1,22 +1,43 @@
 <section class="section">
   <div class="container">
-    <h1>
-      I work with people all over the world to create impressive and
-      <span>functional</span> <span>functional</span> that reflect each client's
-      unique personality.
-    </h1>
+    <div class="about-me">
+      <div class="thumb">
+        <h1 class="about-me-title">
+          I work with people all over the world to create impressive and
+          <span class="functional">functional</span>
+          <span class="websites">websites</span> that reflect each client's
+          unique personality.
+        </h1>
+      </div>
 
-    <div class="about-me__thumb">
-      <img
-        src="../img/mobile/about_me-343@1x.jpg"
-        srcset="
-          ../img/mobile/about_me-343@1x.jpg  1x,
-          ..//img/mobile/about_me-343@2x.jpg 2x
-        "
-        alt="about-me"
-        width="343"
-        height="500"
-      />
+      <picture class="about-me-picture">
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ../img/mobile/about_me-343@1x.jpg 1x,
+            ../img/mobile/about_me-343@2x.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../img/tablet/about_me-704@1x.jpg 1x,
+            ../img/tablet/about_me-704@2x.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ../img/desktop/about_me-680@1x.jpg 1x,
+            ../img/desktop/about_me-680@2x.jpg 2x
+          "
+        />
+        <img
+          class="about-me-img"
+          src="../img/mobile/about_me-343@1x.jpg"
+          alt="about-me"
+        />
+      </picture>
     </div>
   </div>
 </section>
@@ -26,6 +47,11 @@
     <ul class="advantages">
       <li class="advantages-item">
         <h2 class="advantages-title">ABOUT ME</h2>
+        <button class="advantages-button">
+          <svg class="advantages__icon" width="18" height="18">
+            <use href=""></use>
+          </svg>
+        </button>
         <p class="advantages-text">
           I am Lloyd Jefferson, a talented programmer with extensive expertise
           in software development. I have an understanding of different
@@ -81,12 +107,37 @@
 <section class="section">
   <div class="container">
     <ul class="skills">
-      <li class="skills-item">HTML/CSS</li>
-      <li class="skills-item">JavaScript</li>
-      <li class="skills-item">React</li>
-      <li class="skills-item">Node.js</li>
-      <li class="skills-item">React Native</li>
-      <li class="skills-item">Soft skills</li>
+      <li class="skills-item">
+        <svg class="skills__icon" width="130" height="130">
+          <use href=""></use>
+          HTML/CSS
+        </svg>
+      </li>
+      <li class="skills-item">
+        <svg class="skills__icon" width="130" height="130">
+          <use href=""></use>
+        </svg>
+      </li>
+      <li class="skills-item">
+        <svg class="skills__icon" width="130" height="130">
+          <use href=""></use>
+        </svg>
+      </li>
+      <li class="skills-item">
+        <svg class="skills__icon" width="130" height="130">
+          <use href=""></use>
+        </svg>
+      </li>
+      <li class="skills-item">
+        <svg class="skills__icon" width="130" height="130">
+          <use href=""></use>
+        </svg>
+      </li>
+      <li class="skills-item">
+        <svg class="skills__icon" width="130" height="130">
+          <use href=""></use>
+        </svg>
+      </li>
     </ul>
   </div>
 </section>

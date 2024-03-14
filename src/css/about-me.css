@@ -1,39 +1,117 @@
-/* .container {
-  padding: 0 15px;
+.about-me {
+  width: 343px;
+  height: 1016px;
+  border: 2px solid red;
 }
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-    margin: 0 auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-} */
-.about-me__thumb {
+
+.thumb {
   border-radius: 24px;
   width: 343px;
   height: 500px;
-  margin-bottom: 32px;
+  background: var(--cards);
+  padding: 32px;
+  margin-bottom: 16px;
+}
+
+.about-me-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--main-text);
+}
+
+.functional {
+  color: var(--accent-color);
+}
+
+.websites {
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.about-me-picture {
+  border-radius: 24px;
+  width: 343px;
+  height: 500px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-me {
+    width: 704px;
+    height: 700px;
+  }
+
+  .thumb {
+    width: 704px;
+    height: 700px;
+    padding: 64px;
+  }
+
+  .about-me-title {
+    font-size: 38px;
+    line-height: 105%;
+  }
+
+  .about-me-picture {
+    width: 704px;
+    height: 700px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-me {
+    display: flex;
+    width: 1376px;
+    height: 700px;
+  }
+
+  .about-me-picture {
+    width: 680px;
+    height: 700px;
+  }
+}
+
+.thumb {
+  width: 680px;
+  height: 700px;
 }
 
 .advantages-title {
   margin-bottom: 12px;
 }
 
+.advantages-button {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 100px;
+  padding: 9px;
+  width: 36px;
+  height: 36px;
+}
+
+.advantages__icon {
+  fill: black;
+}
+
 .skills-item {
   width: 130px;
   height: 130px;
-  border: 2px solid red;
   border-radius: 100%;
   stroke-width: 1px;
   stroke: rgba(250, 250, 250, 0.2);
-  text-align: center;
+}
+
+.skills-icon {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  stroke-width: 1px;
+  stroke: rgba(250, 250, 250, 0.2);
+  fill: var(--accent-color);
+}
+
+.skills-item:hover,
+.skills-item:focus {
+  fill: var(--button-text);
 }
