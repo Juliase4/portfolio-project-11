@@ -19,6 +19,10 @@
   margin-right: 0;
 }
 
+.reviews-img {
+  border-radius: 10px;
+}
+
 .reviews-name {
   font-weight: 600;
   font-size: 20px;
@@ -41,6 +45,7 @@
 .reviews-slider {
   display: flex;
   justify-content: center;
+  gap: 20px;
 }
 
 .reviews-slider-arrow {
@@ -52,10 +57,16 @@
   background-color: transparent;
 }
 
+.reviews-slider-arrow-icon {
+  stroke: var(--main-text);
+  fill: transparent;
+}
+
 @media screen and (min-width: 768px) {
   .reviews-list {
     display: flex;
     flex-direction: row;
+    gap: 16px;
   }
 }
 
