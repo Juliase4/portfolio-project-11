@@ -49,9 +49,9 @@ background-color: transparent;
         line-height: 0;
     }
 
-    /* .header-open-icon:hover {
+    .header-open-icon:hover {
         stroke: var(--accent-color);
-    } */
+    }
 
     .mobile-burger-menu {
         position: fixed;
@@ -78,6 +78,12 @@ background-color: transparent;
         line-height: 0;
         stroke: var(--main-text);
     }
+
+    .mobile-burger-button{
+        background-color: transparent;
+        padding: 0;
+        line-height: 0;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -93,5 +99,31 @@ background-color: transparent;
 .header-mobile-open-btn{
     display: none;
 }
+
+.dropdown-nav-dropbtn{
+    color: var( --main-text);
+    background-color: transparent;
+    margin: 8px;
+    text-decoration: underline;
+}
+
+.dropdown-nav-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: center;
+}
+
+.nav-menu-link{
+    color: var(--main-text);
+  
+}
+
+.page-header-btn{
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+}
+    
 }
 
