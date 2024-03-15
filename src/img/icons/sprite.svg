@@ -41,3 +41,5 @@
 </symbol>
 </defs>
 </svg>
+<symbol>
+<svg id="circle" xmlns="http://www.w3.org/2000/svg" width="130" height="130" fill="none"><circle cx="65" cy="65" r="64.5" stroke="#FAFAFA" stroke-opacity=".2"/></svg></symbol>
