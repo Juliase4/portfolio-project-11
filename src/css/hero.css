@@ -1,9 +1,9 @@
 .hero-section {
-    background-image: url(../img/hero/hero.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-bottom: 59px;
+    margin-bottom: 59px;  
+    /* margin-bottom: 118px; */
 }
 /* margin-top 188 or 94px */
 .hero-title {
@@ -17,20 +17,13 @@
     margin-top: 188px;
     margin-bottom: 243px;
 }
-.nav-hero {
+.ul-hero {
     display: flex;
-    /* flex-direction: row; */
     justify-content: end;
-    gap: 8px;
     margin-bottom: 32px;
     margin-right: 32px;
+    gap: 8px;
 }
-/* .ul-hero{
-flex-wrap: wrap;
-}
-.li-hero{
-
-} */
 .btn-hero {
     font-family: var(--font-family);
     font-weight: 500;
