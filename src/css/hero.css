@@ -1,67 +1,123 @@
 .hero-section {
+    background-image: url(../img/mobile/hero-mob.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-bottom: 59px;  
-    /* margin-bottom: 118px; */
+    margin-bottom: 64px; /* margin-bottom: 64px or 32px; */ 
 }
-/* margin-top 188 or 94px */
 .hero-title {
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 90px;
+    font-size: 50px;
     line-height: 100%;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: var(--main-text);
-    margin-top: 188px;
-    margin-bottom: 243px;
+    padding-top: 169px; /* padding-top 169 or 84,5px */
+    padding-bottom: 212px;
 }
 .ul-hero {
     display: flex;
-    justify-content: end;
-    margin-bottom: 32px;
-    margin-right: 32px;
-    gap: 8px;
+    justify-content: center;
+    gap: 4px;
+    padding-bottom: 32px;
 }
 .btn-hero {
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: -0.02em;
     color: var(--main-text);
-    background: var(--background);
+    background: none;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
+    width: 37px;
+    height: 37px;
 }
-/* додатково background, залишити чи видалити */
 .btn-hero:hover,
 .btn-hero:focus {
     background: var(--arrow);
     border: 1px solid var(--main-text);
 }
 .ig {
-    padding: 18px 20px;
-    width: 55px;
-    height: 55px;
+    padding: 10px 12px;
 }
 .fb {
-    padding: 18px 17px;
-    width: 53px;
-    height: 55px;
+    padding: 10px;
 }
 .yt {
-    padding: 18px;
-    width: 55px;
-    height: 55px;
+    padding: 10px 11px;
 }
 .gh {
-    padding: 18px 16px;
-    width: 55px;
-    height: 55px;
+    padding: 10px 8px;
 }
 .mailto {
-    padding: 18px 24px;
-    width: 223px;
-    height: 55px;
+    padding: 10px 12px;
+    width: 178px;
+}
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+    .hero-section {
+        background-image: url(../img/tablet/hero-tab.png);
+        margin-bottom: 64px;
+        /* margin-bottom: 64px or 32px; */
+    }
+    .hero-title {
+        padding-top: 188px;
+        padding-bottom: 187px;
+        font-size: 90px;
+    }
+    .ul-hero {
+        display: flex;
+        justify-content: end;
+        gap: 8px;
+    }
+    .btn-hero {
+        font-size: 16px;
+        border: 1px solid rgba(250, 250, 250, 0.2);
+        border-radius: 60px;
+        width: 55px;
+        height: 55px;
+    }
+    .ig {
+        padding: 18px 20px;   
+    }  
+    .fb {
+        padding: 18px 17px;
+        width: 53px;
+    }
+    .yt {
+         padding: 18px;
+    }
+    .gh {
+        padding: 18px 16px;
+    }  
+    .mailto {
+        padding: 18px 24px;
+        width: 223px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1440px;
+        padding-right: 32px;
+        padding-left: 32px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-section {
+        background-image: url(../img/desktop/hero-desk.png);
+        margin-bottom: 118px;
+        /* margin-bottom: 118px or 59px; */
+    }
+    .hero-title {
+        padding-top: 166px;
+        /* padding-top 166 or 83px */
+        padding-bottom: 243px;
+        
+    }
 }
