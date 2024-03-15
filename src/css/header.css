@@ -1,0 +1,146 @@
+
+/* .page-header{
+position: relative;
+}
+
+.page-header-container{
+position: absolute;
+background-color: transparent;
+
+} */
+
+.page-header-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.logo-thumb {
+    display: flex;
+
+}
+
+.logo {
+    border-radius: 18px;
+}
+
+.logo-name {
+    color: var(--main-text);
+    font-size: 20px;
+    font-style: medium;
+    margin-left: 8px;
+}
+
+.page-nav {
+    display: none;
+}
+
+.page-header-btn{
+    display: none;
+}
+
+
+@media screen and (max-width: 767px){
+
+    .header-mobile-open-btn {
+        background-color: transparent;
+        padding: 0;
+        line-height: 0;
+    }
+
+    .header-open-icon:hover {
+        stroke: var(--accent-color);
+    }
+
+    .mobile-burger-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99999999;
+        background-image: linear-gradient(to right, #ed3b44, #1c1d20);
+        transform: translateX(100%);
+        transition: transform 300ms linear;
+    }
+
+    .mobile-close-menu-container {
+        position: relative;
+    }
+
+    .mobile-close-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: transparent;
+        padding: 0;
+        line-height: 0;
+        stroke: var(--main-text);
+    }
+
+    .mobile-anchor-button{
+        background-color: transparent;
+        padding: 0;
+        line-height: 0;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+.page-nav {
+  display: flex;
+}
+
+.page-header-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 163px;
+    height: 55px;
+    background-color: var(--accent-color);
+    color: var(--main-text);
+    border-radius: 60px;
+    padding: 24px 18px;
+    gap: 10px;
+}
+
+.header-mobile-open-btn{
+    display: none;
+}
+
+.dropdown-nav-dropbtn{
+    color: var( --main-text);
+    background-color: transparent;
+    margin: 8px;
+    text-decoration: underline;
+}
+
+.dropdown-nav-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: center;
+}
+
+.nav-menu-link{
+    color: var(--main-text);
+  
+}
+
+.page-header-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 164px;
+    height: 45px;
+    background-color: var(--accent-color);
+    color: var(--main-text);
+    border-radius: 60px;
+    padding: 31px 14px;
+    gap: 10px;
+}
+    
+}
+
