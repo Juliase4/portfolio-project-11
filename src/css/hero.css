@@ -54,27 +54,7 @@
     padding: 10px 12px;
     width: 178px;
 }
-@media screen and (max-width: 767px) {
-    .container {
-        width: 343px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    .section {
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
-}
 @media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-        padding-right: 32px;
-        padding-left: 32px;
-    }
-    .section {
-        padding-top: 48px;
-        padding-bottom: 48px;
-    }
     .hero-section {
         background-image: url(../img/tablet/hero-tab.png);
     }
@@ -114,17 +94,6 @@
     }
 }
 @media screen and (min-width: 1440px) {
-    .container {
-        width: 1440px;
-        padding-right: 32px;
-        padding-left: 32px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .section {
-        padding-top: 82px;
-        padding-bottom: 82px;
-    }
     .hero-section {
         background-image: url(../img/desktop/hero-desk.png);
     }
