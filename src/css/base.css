@@ -1,25 +1,9 @@
-.container {
-  padding: 0 32px;
-  margin: 0 auto;
-  border: 2px solid;
-}
-
-.section {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .title {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.4);
-}
-
-button {
-  cursor: pointer;
-  border: none;
 }
 
 .accent-color {
@@ -40,16 +24,29 @@ button {
   overflow: hidden;
 }
 
-@media screen and (min-width: 375px) {
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
   .container {
     width: 343px;
-    padding: 0 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .section {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
   }
 
   .section {
@@ -58,9 +55,13 @@ button {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .container {
-    width: 1280px;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 32px;
+    padding-left: 32px;
   }
 
   .section {
@@ -68,9 +69,3 @@ button {
     padding-bottom: 82px;
   }
 }
-
-/* @media screen and (min-width: 1440px) {
-  .container {
-    width: 1440px;
-  }
-} */
