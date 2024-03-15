@@ -1,0 +1,67 @@
+.hero-section {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 59px;  
+    /* margin-bottom: 118px; */
+}
+/* margin-top 188 or 94px */
+.hero-title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--main-text);
+    margin-top: 188px;
+    margin-bottom: 243px;
+}
+.ul-hero {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 32px;
+    margin-right: 32px;
+    gap: 8px;
+}
+.btn-hero {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: var(--main-text);
+    background: var(--background);
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+}
+/* додатково background, залишити чи видалити */
+.btn-hero:hover,
+.btn-hero:focus {
+    background: var(--arrow);
+    border: 1px solid var(--main-text);
+}
+.ig {
+    padding: 18px 20px;
+    width: 55px;
+    height: 55px;
+}
+.fb {
+    padding: 18px 17px;
+    width: 53px;
+    height: 55px;
+}
+.yt {
+    padding: 18px;
+    width: 55px;
+    height: 55px;
+}
+.gh {
+    padding: 18px 16px;
+    width: 55px;
+    height: 55px;
+}
+.mailto {
+    padding: 18px 24px;
+    width: 223px;
+    height: 55px;
+}
