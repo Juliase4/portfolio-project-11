@@ -13,7 +13,7 @@ background-color: transparent;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-top: 32px;
+    margin-top: 32px; 
 }
 
 .logo-thumb {
