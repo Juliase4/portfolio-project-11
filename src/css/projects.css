@@ -1,1 +1,51 @@
-/* bash_test */
+.slider {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.buttons button:hover {
+  background-color: #ddd;
+}
+
+.buttons .prev {
+  margin-right: 10px;
+}
+
+.buttons .next {
+  margin-left: 10px;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
