@@ -1,4 +1,4 @@
-.hero-section {
+.wrapper-bgd {
     background-image: url(../img/mobile/hero-mob.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -55,7 +55,7 @@
     width: 178px;
 }
 @media screen and (min-width: 768px) {
-    .hero-section {
+    .wrapper-bgd {
         background-image: url(../img/tablet/hero-tab.png);
     }
     .hero-title {
@@ -94,7 +94,7 @@
     }
 }
 @media screen and (min-width: 1440px) {
-    .hero-section {
+    .wrapper-bgd {
         background-image: url(../img/desktop/hero-desk.png);
     }
     .hero-title {
