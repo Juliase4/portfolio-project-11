@@ -56,3 +56,16 @@
   opacity: 0.5;
   pointer-events: none;
 }
+
+.project-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.interior-style {
+  display: flex;
+  flex-direction: row-reverse;
+   background-color: var(--cards);
+  border-radius: 20px;
+}
