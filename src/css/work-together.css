@@ -1,0 +1,303 @@
+.work-div {
+    display: flex;
+}
+
+#work-together {
+    margin-left: 16px;
+}
+
+input {
+    outline: none;
+}
+
+.img-together {
+    display: block;
+    margin-right: 8px;
+}
+
+.work-together-text {
+    /* Mobile/H2 */
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -3%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.work-together-text>span {
+    color: rgb(237, 59, 68);
+}
+
+.together {
+    /* Mobile/H2 */
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -3%;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 4px;
+    margin-bottom: 63px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#email {
+    background-color: transparent;
+    width: 343px;
+    height: 44px;
+    border: none;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+    color: rgb(250, 250, 250);
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -2%;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+#email::placeholder {
+    color: rgba(250, 250, 250, 0.6);
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -2%;
+    text-align: left;
+}
+
+#form-text {
+    background-color: transparent;
+    width: 343px;
+    height: 44px;
+    border: none;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+    color: rgb(250, 250, 250);
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -2%;
+    text-align: left;
+    margin-bottom: 32px;
+
+}
+
+#form-text::placeholder {
+    color: rgba(250, 250, 250, 0.6);
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -2%;
+    text-align: left;
+}
+
+.submit-button {
+    background: rgb(237, 59, 68);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    color: rgb(250, 250, 250);
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -2%;
+    text-align: center;
+    margin-bottom: 64px;
+    transition: background 250ms;
+}
+
+.submit-button:hover,
+.submit-button:active,
+.submit-button:focus {
+    background: rgb(224, 55, 63);
+}
+
+
+
+.phone-number {
+    /* Mobile/Text */
+    color: rgb(250, 250, 250);
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: -2%;
+    text-align: left;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 10px 12px 10px 12px;
+    margin-right: 4px;
+}
+
+.mail-link {
+    color: rgb(250, 250, 250);
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: -2%;
+    text-align: left;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 10px 12px 10px 12px;
+}
+
+@media screen and (min-width: 768px) {
+    #work-together {
+        margin-left: 32px;
+    }
+
+    .img-together {
+        margin-right: 20px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .work-together-text {
+        font-family: 'Inter Tight', sans-serif;
+        font-size: 64px;
+        font-weight: 500;
+        line-height: 64px;
+        letter-spacing: -3%;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .work-together-text>span {
+        color: rgb(237, 59, 68);
+    }
+
+    .together {
+        color: rgb(250, 250, 250);
+        font-family: 'Inter Tight', sans-serif;
+        font-size: 64px;
+        font-weight: 500;
+        line-height: 64px;
+        letter-spacing: -3%;
+        text-align: left;
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-bottom: 64px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    #email {
+        width: 245px;
+        height: 44px;
+        margin-right: 32px;
+    }
+
+    #form-text {
+        width: 245px;
+        height: 44px;
+        margin-right: 32px;
+    }
+
+    .submit-button {
+        width: 150px;
+        height: 150px;
+    }
+
+    .phone-number {
+        padding: 18px 32px 18px 32px;
+        margin-right: 8px;
+    }
+
+    .mail-link {
+        padding: 18px 32px 18px 32px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #work-together {
+        margin-left: 196px;
+    }
+
+    .img-together {
+        margin-right: 20px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .work-together-text {
+        font-family: 'Inter Tight', sans-serif;
+        font-size: 64px;
+        font-weight: 500;
+        line-height: 64px;
+        letter-spacing: -3%;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .work-together-text>span {
+        color: rgb(237, 59, 68);
+    }
+
+    .together {
+        color: rgb(250, 250, 250);
+        font-family: 'Inter Tight', sans-serif;
+        font-size: 64px;
+        font-weight: 500;
+        line-height: 64px;
+        letter-spacing: -3%;
+        text-align: left;
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-bottom: 64px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    #email {
+        width: 390px;
+        height: 44px;
+        margin-right: 32px;
+    }
+
+    #form-text {
+        width: 390px;
+        height: 44px;
+        margin-right: 86px;
+    }
+
+    .submit-button {
+        width: 150px;
+        height: 150px;
+    }
+
+    .phone-number {
+        padding: 18px 32px 18px 32px;
+        margin-right: 8px;
+    }
+
+    .mail-link {
+        padding: 18px 32px 18px 32px;
+    }
+}
+
+.work-div {}
