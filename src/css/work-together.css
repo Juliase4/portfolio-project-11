@@ -1,0 +1,33 @@
+.work-div {
+    display: flex;
+}
+
+.img-together {
+    display: block;
+}
+
+.work-together-text {
+    /* Mobile/H2 */
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -3%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.work-together-text>span {
+    color: rgb(237, 59, 68);
+}
+
+.together {
+    /* Mobile/H2 */
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -3%;
+    text-align: left;
+    text-transform: uppercase;
+}
