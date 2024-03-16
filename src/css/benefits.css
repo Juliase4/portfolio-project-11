@@ -4,6 +4,7 @@
     line-height: 1.5;
     letter-spacing: -0.02em;
     color: var(--main-text);
+    padding-bottom: 8px;
 }
 
 .benefits-text{
@@ -16,11 +17,19 @@
 
 .benefits-icon{
     background-color: var(--accent-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    width: 48px;
+    margin-bottom: 64px;
 }
 
 .benefits-card{
     background-color: var(--cards);
     border-radius: 20px;
+    padding: 24px;
 }
 
 .benefits-button{
@@ -28,7 +37,12 @@
     background-color: var(--background);
     border-radius: 60px;
     padding: 18px 36px 18px 36px; 
+    margin-top: 32px;
+}
 
+.benefits-button:hover,
+.benefits-button:focus{
+    background-color: var(--arrow);
 }
 
 .benefits-bt-text{
@@ -48,4 +62,26 @@
 
 .title{
     margin-bottom: 32px;
+}
+
+.benefits-banges{
+    fill: var(--accent-color);
+}
+
+@media screen and (min-width: 768px){
+    .benefits-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+    } 
+
+    .benefits-card{
+        width: calc((100% - 16px) / 2);
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+    .benefits-elemens{
+        padding-left: 50%; 
+    }
 }
