@@ -15,7 +15,7 @@
   <script type="module" crossorigin src="/portfolio-project-11/commonHelpers.js"></script>
   <link rel="modulepreload" crossorigin href="/portfolio-project-11/assets/vendor-0f055db0.js">
   <link rel="stylesheet" href="/portfolio-project-11/assets/vendor-8255b786.css">
-  <link rel="stylesheet" href="/portfolio-project-11/assets/index-53f8e89f.css">
+  <link rel="stylesheet" href="/portfolio-project-11/assets/index-a0fba1f2.css">
 </head>
 
 <body>
@@ -377,60 +377,76 @@
 
 </div>
 </section> 
-  <div class="slider">
-  <div class="slides">
-    <div class="slide">
-      <img src="image1.jpg" alt="Image 1">
-      <h2>Заголовок 1</h2>
-      <p>Опис 1</p>
-    </div>
-    <div class="slide">
-      <img src="image2.jpg" alt="Image 2">
-      <h2>Заголовок 2</h2>
-      <p>Опис 2</p>
-    </div>
-    <div class="slide">
-      <img src="image3.jpg" alt="Image 3">
-      <h2>Заголовок 3</h2>
-      <p>Опис 3</p>
+  
+<section class="section">
+  <div class="container">
+    <h2 class="title">Projects</h2>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide">
+          <img src="image1.jpg" alt="Image 1" />
+          <h2>Заголовок 1</h2>
+          <p>Опис 1</p>
+        </div>
+        <div class="slide">
+          <img src="image2.jpg" alt="Image 2" />
+          <h2>Заголовок 2</h2>
+          <p>Опис 2</p>
+        </div>
+        <div class="slide">
+          <img src="image3.jpg" alt="Image 3" />
+          <h2>Заголовок 3</h2>
+          <p>Опис 3</p>
+        </div>
+      </div>
+      <div class="reviews-slider">
+        <button class="prev reviews-slider-arrow" disabled>
+          <svg class="reviews-slider-arrow-icon" width="24" height="24">
+            <use href="/portfolio-project-11/assets/sprite-f505d3aa.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button class="next reviews-slider-arrow">
+          <svg class="reviews-slider-arrow-icon" width="24" height="24">
+            <use href="/portfolio-project-11/assets/sprite-f505d3aa.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
-  <div class="buttons">
-    <button class="prev">Назад</button>
-    <button class="next">Вперед</button>
-  </div>
-</div> 
+  <section />
 
-<script>
+  <script>
     const slider = document.querySelector('.slider');
-const slides = document.querySelector('.slides');
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
+    const slides = document.querySelector('.slides');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
 
-let currentSlide = 0;
+    let currentSlide = 0;
 
-function showSlide(slideIndex) {
-  slides.style.transform = `translateX(-${slideIndex * 100}%)`;
-  updateButtons();
-}
+    function showSlide(slideIndex) {
+      slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+      updateButtons();
+    }
 
-function updateButtons() {
-  prevButton.disabled = currentSlide === 0;
-  nextButton.disabled = currentSlide === slides.children.length - 1;
-}
+    function updateButtons() {
+      prevButton.disabled = currentSlide === 0;
+      nextButton.disabled = currentSlide === slides.children.length - 1;
+    }
 
-prevButton.addEventListener('click', () => {
-  currentSlide--;
-  showSlide(currentSlide);
-});
+    prevButton.addEventListener('click', () => {
+      currentSlide--;
+      showSlide(currentSlide);
+    });
 
-nextButton.addEventListener('click', () => {
-  currentSlide++;
-  showSlide(currentSlide);
-});
+    nextButton.addEventListener('click', () => {
+      currentSlide++;
+      showSlide(currentSlide);
+    });
 
-showSlide(currentSlide);
-</script>
+    showSlide(currentSlide);
+  </script>
+</section>
+
   <section class="faq-section section" id="#faq">
     <div class="container">
         <h2 class="title">FAQ</h2>
