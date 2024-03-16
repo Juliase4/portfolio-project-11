@@ -29,7 +29,7 @@
   margin-right: auto;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and () {
   .container {
     width: 343px;
     padding-left: 16px;

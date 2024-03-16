@@ -1,7 +1,7 @@
-<section class="section" id="about">
+<section class="about__section" id="about">
   <div class="container">
     <div class="about-me">
-      <div class="thumb">
+      <div class="thumb hidden">
         <h2 class="about-me__title">
           I work with people all over the world to create impressive and
           <span class="functional">functional</span>
@@ -15,50 +15,46 @@
           <source
             media="(max-width: 767px)"
             srcset="
-              ../img/mobile/about_me-343@1x.jpg 1x,
-              ../img/mobile/about_me-343@2x.jpg 2x
+              ./img/mobile/about_me-343@1x.jpg 1x,
+              ./img/mobile/about_me-343@2x.jpg 2x
             "
           />
           <source
-            media="(min-width: 768px)"
+            media="(max-width: 1439px)"
             srcset="
-              ../img/tablet/about_me-704@1x.jpg 1x,
-              ../img/tablet/about_me-704@2x.jpg 2x
+              ./img/tablet/about_me-704@1x.jpg 1x,
+              ./img/tablet/about_me-704@2x.jpg 2x
             "
           />
           <source
-            media="(min-width: 1280px)"
+            media="(min-width: 1440px)"
             srcset="
-              ../img/desktop/about_me-680@1x.jpg 1x,
-              ../img/desktop/about_me-680@2x.jpg 2x
+              ./img/desktop/about_me-680@1x.jpg 1x,
+              ./img/desktop/about_me-680@2x.jpg 2x
             "
           />
           <img
-            class="about-me-img"
-            src="../img/mobile/about_me-343@1x.jpg"
+            class="about-me__img"
+            src="./img/desktop/about_me-680@1x.jpg 1x,"
             alt="about-me"
           />
         </picture>
       </div>
     </div>
-  </div>
-</section>
 
-<section class="section">
-  <div class="container">
-    <ul class="advantages">
+    <ul class="list advantages">
       <li class="advantages__item">
-        <div class="ac advantages__ac">
+        <div class="advantages__ac">
           <h2 class="advantages__title">ABOUT ME</h2>
           <div class="advantages__thumb">
             <svg class="advantages__icon" width="18" height="18">
-              <use href="../img/icons/sprite.svg#icon-arrow-down"></use>
+              <use href="./img/icons/sprite.svg#icon-arrow-down"></use>
             </svg>
           </div>
         </div>
 
-        <div class="advantages-panel">
-          <p class="advantages__text">
+        <div class="advantages__panel">
+          <p class="advantages__text about">
             I am Lloyd Jefferson, a talented programmer with extensive expertise
             in software development. I have an understanding of different
             programming languages ​​and technologies, always ready to improve my
@@ -78,7 +74,7 @@
             independently and in a team. I can effectively cooperate with
             colleagues, exchanging ideas and finding optimal solutions.
           </p>
-          <p class="advantages__text">
+          <p class="advantages__text about">
             Professional maturity allows you to calmly cope with challenges and
             stressful situations, while maintaining a high quality of work.I am
             always looking for opportunities for self-improvement. I actively
@@ -90,88 +86,84 @@
         </div>
       </li>
       <li class="advantages__item">
-        <div class="ac advantages__ac">
+        <div class="advantages__ac">
           <h2 class="advantages__title">ROLE</h2>
           <div class="advantages__thumb">
             <svg class="advantages__icon" width="18" height="18">
-              <use href="../img/icons/sprite.svg#icon-arrow-down"></use>
+              <use href="./img/icons/sprite.svg#icon-arrow-down"></use>
             </svg>
           </div>
         </div>
 
-        <div class="advantages-panel">
-          <p class="advantages__text">Frontend development</p>
-          <p class="advantages__text">HeadlessCMS,Wordpress</p>
-          <p class="advantages__text">Blender(enjoy)</p>
+        <div class="advantages__panel">
+          <p class="advantages__text role">Frontend development</p>
+          <p class="advantages__text role">HeadlessCMS,Wordpress</p>
+          <p class="advantages__text role">Blender(enjoy)</p>
         </div>
       </li>
       <li class="advantages__item">
-        <div class="ac advantages__ac">
+        <div class="advantages__ac">
           <h2 class="advantages__title">EDUCATION</h2>
           <div class="advantages__thumb">
             <svg class="advantages__icon" width="18" height="18">
-              <use href="../img/icons/sprite.svg#icon-arrow-down"></use>
+              <use href="./img/icons/sprite.svg#icon-arrow-down"></use>
             </svg>
           </div>
         </div>
 
-        <div class="advantages-panel">
-          <p class="advantages__text">
+        <div class="advantages__panel">
+          <p class="advantages__text education">
             2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
           </p>
-          <p class="advantages__text">
+          <p class="advantages__text education">
             2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
             New York
           </p>
-          <p class="advantages__text">
+          <p class="advantages__text education">
             2020 - 2022 / Advanced Blender Animation Techniques, Udemy
           </p>
         </div>
       </li>
     </ul>
-  </div>
-</section>
 
-<section class="section">
-  <div class="container">
     <div class="swiper">
-      <ul class="skills swiper-wrapper">
+      <ul class="skills swiper-wrapper list">
         <li class="skills__item swiper-slide">
             <p class="skills__text">
               HTML/CSS
             </p>
             <svg class="skills__icon" width="130" height="130">
-              <use href="../img/icons/sprite.svg#circle"></use>
+              <use href="./img/icons/sprite.svg#circle"></use>
             </svg>
         </li>
         <li class="skills__item swiper-slide">
           <p class="skills__text">JavaScript</p>
             <svg class="skills__icon" width="130" height="130">
-              <use href="../img/icons/sprite.svg#circle"></use>
+              <use href="./img/icons/sprite.svg#circle"></use>
           </a>
         </li>
         <li class="skills__item swiper-slide">
           <p class="skills__text">React</p>
             <svg class="skills__icon" width="130" height="130">
-              <use href="../img/icons/sprite.svg#circle"></use>
+              <use href="./img/icons/sprite.svg#circle"></use>
             </svg>
         </li>
         <li class="skills__item swiper-slide">
           <p class="skills__text">Node.js</p>
           <svg class="skills__icon" width="130" height="130">
-            <use href="../img/icons/sprite.svg#circle"></use>
+            <use href="./img/icons/sprite.svg#circle"></use>
           </svg>
         </li>
         <li class="skills__item swiper-slide">
           <p class="skills__text">React Native</p>
             <svg class="skills__icon" width="130" height="130">
-              <use href="../img/icons/sprite.svg#circle"></use>
+              <use href="./img/icons/sprite.svg#circle"></use>
             </svg>
         </li>
         <li class="skills__item swiper-slide">
           <p class="skills__text">Soft skills</p>
             <svg class="skills__icon" width="130" height="130">
-              <use href="../img/icons/sprite.svg#circle"></use>
+              <use href="./img/icons/sprite.svg#circle"></use>
             </svg>
         </li>
       </ul>
@@ -182,6 +174,5 @@
         </svg>
       </div> -->
       </div>
-    </div>
   </div>
 </section>
