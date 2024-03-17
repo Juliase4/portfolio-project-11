@@ -1,4 +1,4 @@
-/* .examples-container {
+.examples-container {
   position: relative;
   height: 508px;
   overflow: hidden;
@@ -13,7 +13,7 @@
   background: url("/src/img/desktop/covers_vectors.png") center / cover;
 }
 
-.examples-wrapper {
+/* .examples-wrapper {
   position: absolute;
   width: 1100px;
   left: 50%;
@@ -24,16 +24,16 @@
   gap: 28px;
   flex-wrap: wrap;
   animation: moving 40s linear 0s infinite;
-}
+} */
 
-.example-section {
+/* .example-section {
   width: 282px;
   height: 163px;
   position: relative;
   display: block;
-}
+} */
 
-.example-section--offset {
+/* .example-section--offset {
   transform: translateX(50%);
 }
 
@@ -71,9 +71,9 @@
 
 .example-section--9 {
   background: url("/src/img/desktop/covers12-680@1x.jpg") center / contain;
-}
+} */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .examples-container {
     height: 980px;
   }
@@ -122,9 +122,9 @@
   .example-section--9 {
     background: url("/src/img/desktop/covers12-680@2x.png") center / contain;
   }
-}
+} */
 
-@keyframes moving {
+/* @keyframes moving {
   0% {
     translate: -25% 10%;
   }

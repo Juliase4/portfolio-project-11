@@ -1,29 +1,6 @@
 // import Swiper JS
 import Swiper from 'swiper';
 
-const swiper = new Swiper('.reviews .swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: true,
-  navigation: {
-    nextEl: '.reviews .swiper-button-next',
-    prevEl: '.reviews .swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
-
 const slider = document.querySelector('.slider');
 const slides = document.querySelectorAll('.slide');
 const prevButton = document.querySelector('.prev');
