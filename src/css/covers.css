@@ -1,139 +1,139 @@
-.examples-container {
-    position: relative;
-    height: 508px;
-    overflow: hidden;
+/* .examples-container {
+  position: relative;
+  height: 508px;
+  overflow: hidden;
 }
 
 .examples-background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: url("/src/img/desktop/covers_vectors.png") center / cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url("/src/img/desktop/covers_vectors.png") center / cover;
 }
 
 .examples-wrapper {
-    position: absolute;
-    width: 1100px;
-    left: 50%;
-    top: -20px;
-    translate: -50% 0;
-    rotate: 17deg;
-    display: flex;
-    gap: 28px;
-    flex-wrap: wrap;
-    animation: moving 40s linear 0s infinite;
+  position: absolute;
+  width: 1100px;
+  left: 50%;
+  top: -20px;
+  translate: -50% 0;
+  rotate: 17deg;
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  animation: moving 40s linear 0s infinite;
 }
 
 .example-section {
-    width: 282px;
-    height: 163px;
-    position: relative;
-    display: block;
+  width: 282px;
+  height: 163px;
+  position: relative;
+  display: block;
 }
 
 .example-section--offset {
-    transform: translateX(50%);
+  transform: translateX(50%);
 }
 
 .example-section--1 {
-    background: url("/src/img/desktop/covers4-680@1x.jpg") center / contain;
+  background: url("../src/img/desktop/covers4-680@1x.jpg") center / contain;
 }
 
 .example-section--2 {
-    background: url("/src/img/desktop/covers5-680@1x.jpg") center / contain;
+  background: url("../src/img/desktop/covers5-680@1x.jpg") center / contain;
 }
 
 .example-section--3 {
-    background: url("/src/img/desktop/covers6-680@1x.jpg") center / contain;
+  background: url("/src/img/desktop/covers6-680@1x.jpg") center / contain;
 }
 
 .example-section--4 {
-    background: url("/src/img/desktop/covers7-680@1x.jpg") center / contain;
+  background: url("/src/img/desktop/covers7-680@1x.jpg") center / contain;
 }
 
 .example-section--5 {
-    background: url("/src/img/desktop/covers8-680@1x.jpg") center / contain;
+  background: url("/src/img/desktop/covers8-680@1x.jpg") center / contain;
 }
 
 .example-section--6 {
-    background: url("/src/img/desktop/covers9-680@1x.jpg") center / contain;
+  background: url("/src/img/desktop/covers9-680@1x.jpg") center / contain;
 }
 
 .example-section--7 {
-    background: url("/src/img/desktop/covers10-680@1x.jpg") center / contain;
+  background: url("/src/img/desktop/covers10-680@1x.jpg") center / contain;
 }
 
 .example-section--8 {
-    background: url("/src/img/desktop/covers11-680@1x.jpg") center / contain;
+  background: url("/src/img/desktop/covers11-680@1x.jpg") center / contain;
 }
 
 .example-section--9 {
-    background: url("/src/img/desktop/covers12-680@1x.jpg") center / contain;
+  background: url("/src/img/desktop/covers12-680@1x.jpg") center / contain;
 }
 
 @media (min-width: 768px) {
-    .examples-container {
-        height: 980px;
-    }
+  .examples-container {
+    height: 980px;
+  }
 
-    .examples-wrapper {
-        width: 1980px;
-    }
+  .examples-wrapper {
+    width: 1980px;
+  }
 
-    .example-section {
-        width: 544px;
-        height: 314px;
-    }
+  .example-section {
+    width: 544px;
+    height: 314px;
+  }
 
-    .example-section--1 {
-        background: url("/src/img/desktop/covers4-680@2x.png") center / contain;
-    }
+  .example-section--1 {
+    background: url("/src/img/desktop/covers4-680@2x.png") center / contain;
+  }
 
-    .example-section--2 {
-        background: url("/src/img/desktop/covers5-680@2x.png") center / contain;
-    }
+  .example-section--2 {
+    background: url("/src/img/desktop/covers5-680@2x.png") center / contain;
+  }
 
-    .example-section--3 {
-        background: url("/src/img/desktop/covers6-680@2x.png") center / contain;
-    }
+  .example-section--3 {
+    background: url("/src/img/desktop/covers6-680@2x.png") center / contain;
+  }
 
-    .example-section--4 {
-        background: url("/src/img/desktop/covers7-680@2x.png") center / contain;
-    }
+  .example-section--4 {
+    background: url("/src/img/desktop/covers7-680@2x.png") center / contain;
+  }
 
-    .example-section--5 {
-        background: url("/src/img/desktop/covers8-680@2x.png") center / contain;
-    }
+  .example-section--5 {
+    background: url("/src/img/desktop/covers8-680@2x.png") center / contain;
+  }
 
-    .example-section--6 {
-        background: url("/src/img/desktop/covers9-680@2x.png") center / contain;
-    }
+  .example-section--6 {
+    background: url("/src/img/desktop/covers9-680@2x.png") center / contain;
+  }
 
-    .example-section--7 {
-        background: url("/src/img/desktop/covers10-680@2x.png") center / contain;
-    }
+  .example-section--7 {
+    background: url("/src/img/desktop/covers10-680@2x.png") center / contain;
+  }
 
-    .example-section--8 {
-        background: url("/src/img/desktop/covers11-680@2x.png") center / contain;
-    }
+  .example-section--8 {
+    background: url("/src/img/desktop/covers11-680@2x.png") center / contain;
+  }
 
-    .example-section--9 {
-        background: url("/src/img/desktop/covers12-680@2x.png") center / contain;
-    }
+  .example-section--9 {
+    background: url("/src/img/desktop/covers12-680@2x.png") center / contain;
+  }
 }
 
 @keyframes moving {
-    0% {
-        translate: -25% 10%;
-    }
+  0% {
+    translate: -25% 10%;
+  }
 
-    50% {
-        translate: -75% -10%;
-    }
+  50% {
+    translate: -75% -10%;
+  }
 
-    100% {
-        translate: -25% 10%;
-    }
-}
+  100% {
+    translate: -25% 10%;
+  }
+} */
