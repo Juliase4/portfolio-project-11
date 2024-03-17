@@ -15,7 +15,7 @@
   <script type="module" crossorigin src="/portfolio-project-11/commonHelpers.js"></script>
   <link rel="modulepreload" crossorigin href="/portfolio-project-11/assets/vendor-0f055db0.js">
   <link rel="stylesheet" href="/portfolio-project-11/assets/vendor-8255b786.css">
-  <link rel="stylesheet" href="/portfolio-project-11/assets/index-16a33982.css">
+  <link rel="stylesheet" href="/portfolio-project-11/assets/index-1315bb07.css">
 </head>
 
 <body>
@@ -24,71 +24,36 @@
     <header class="page-header" id="header">
   <div class="container page-header-container">
     <div class="logo-thumb">
-      <img
-        class="logo"
-        src="../img/mobile/logo-80@1x.jpg"
-        srcset="../img/mobile/logo-80@2x.jpg 2x"
-        alt="logo"
-        width="80"
-        height="80"
-      />
+      <img class="logo" src="../img/mobile/logo-80@1x.jpg" srcset="../img/mobile/logo-80@2x.jpg 2x" alt="logo"
+           width="80" height="80" />
       <span class="logo-name">jefferson*</span>
     </div>
 
- <nav class="page-nav">
-  <div class="page-dropdown-nav">
-    <button class="dropdown-nav-dropbtn">Меню      
+    <nav class="page-nav">
+      <div class="page-dropdown-nav">
+        <button class="dropdown-nav-dropbtn">Меню
+        </button>
+        <div class="dropdown-nav-content">
+          <a href="#about" class="nav-menu-link link">About me</a>
+          <a href="#benefits" class="nav-menu-link link">Benefits</a>
+          <a href="#projects" class="nav-menu-link link">Projects</a>
+          <a href="#faq" class="nav-menu-link link">FAQ</a>
+        </div>
+      </div>
+    </nav>
+
+    <button class="page-header-btn button">Order the project
     </button>
-    <div class="dropdown-nav-content">
-      <a href="#about" class="nav-menu-link link">About me</a>
-      <a href="#benefits" class="nav-menu-link link">Benefits</a>      
-      <a href="#projects" class="nav-menu-link link">Projects</a>       
-      <a href="#faq" class="nav-menu-link link">FAQ</a>
-    </div>
-  </div> 
- </nav>    
 
-  <button class="page-header-btn button">Order the project
-  </button>
+    <button class="header-mobile-open-btn button" id="open-menu-button" type="button">
+      <svg class="header-open-icon" width="28" height="28">
+        <use href="/portfolio-project-11/assets/sprite-f505d3aa.svg#icon-burger"></use>
+      </svg>
+    </button>
 
-  <button type="button" class="header-mobile-open-btn button">
-  <svg class="header-open-icon" width="28" height="28">
-     <use href="../img/icons/header-sprite.svg#icon-burger-open"></use>
-  </svg>
-  <a href="#work" class="link"></a>    
-  </button>
-
-    </div>
+  </div>
   </div>
 </header>
-
-
-
-<div class="mobile-burger-menu" hidden>
-  <div class="container mobile-close-menu-container">
-    <button type="button" class="mobile-close-btn button">
-     <svg width="28" height="28" class="mobile-close-btn-icon">
-      <use href="../img/icons/header-sprite.svg#icon-close-btn"></use>
-     </svg>
-    </button>    
-
-    <ul class="mobile-burger-menu-list list">
-     <li class="mobile-menu-anchor-item">
-      <a href="#about" class="menu-anchor-link link">About me</a>
-     </li>
-     <li class="mobile-menu-anchor-item">
-      <a href="#benefits" class="menu-anchor-link link">Benefits</a>
-     </li>
-     <li class="mobile-menu-anchor-item">
-      <a href="#progects" class="menu-anchor-link link">Projects</a>
-     </li>
-     <li class="mobile-menu-anchor-item">
-      <a href="#faq" class="menu-anchor-link link">FAQ</a>
-     </li>
-    </ul>
-    <button class="mobile-anchor-button button">Order the project</button>
- </div> 
-</div>
     <section class="hero-section section">
     <div class="container">
         <picture>
@@ -308,59 +273,62 @@
 
 
 
-  </section>
-<section id="benefits" class="section">
-    <div class="container">
+  <section id="benefits" class="section">
+  <div class="container">
     <h2 class="title">BENEFITS OF WORKING WITH ME</h2>
     <div class="benefits-elemens">
-            <ul class=" list benefits-list">
+      <ul class=" list benefits-list">
         <li class="benefits-card">
-            <div class="benefits-icon">
+          <div class="benefits-icon">
             <svg width="24" height="24" class="benefits-banges">
-                <use href="/portfolio-project-11/assets/sprite-f505d3aa.svg#icon-user"></use>
+              <use href="/portfolio-project-11/assets/sprite-f505d3aa.svg#icon-user"></use>
             </svg>
-            </div>
-    <h3 class="benefits-title">Expertise</h3>
-    <p class="benefits-text">As a highly experienced developer, I have deep knowledge of programming and website development.</p>
-       </li>
-<li class="benefits-card">
-    <div class="benefits-icon">
-        <svg width="24" height="24" class="benefits-banges">
-            <use href="/portfolio-project-11/assets/sprite-f505d3aa.svg#icon-message-chat-circle"></use>
-        </svg>
-        </div>
-    <h3 class="benefits-title">Communication</h3>
-    <p class="benefits-text"> Understanding your needs and wants is my priority and I am always open to discussions and corrections.</p>
-</li>
-<li class="benefits-card">
-    <div class="benefits-icon">
-        <svg width="24" height="24" class="benefits-banges">
-            <use href="/portfolio-project-11/assets/sprite-f505d3aa.svg#icon-brush"></use>
-        </svg>
-        </div>
-    <h3 class="benefits-title">Art</h3>
-    <p class="benefits-text">Thanks to my creative nature, I am ready to accept challenges and help you bring your ideas to life. </p>
-</li>
-<li class="benefits-card">
-    <div class="benefits-icon">
-        <svg width="24" height="24" class="benefits-banges">
-            <use href="/portfolio-project-11/assets/sprite-f505d3aa.svg#icon-hourglass"></use>
-        </svg>
-        </div>
-    <h3 class="benefits-title">Urgent execution</h3>
-    <p class="benefits-text">I understand how important time is to you. Ready to work quickly and efficiently, without reducing the quality of work.</p>
-</li>
-</ul>
-<button type="button" class="benefits-button">
-    <a href="#work"></a>
-    <p class="benefits-bt-text">Order the project</p>
-    
-</button>
+          </div>
+          <h3 class="benefits-title">Expertise</h3>
+          <p class="benefits-text">As a highly experienced developer, I have deep knowledge of programming and website
+            development.</p>
+        </li>
+        <li class="benefits-card">
+          <div class="benefits-icon">
+            <svg width="24" height="24" class="benefits-banges">
+              <use href="/portfolio-project-11/assets/sprite-f505d3aa.svg#icon-message-chat-circle"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-title">Communication</h3>
+          <p class="benefits-text"> Understanding your needs and wants is my priority and I am always open to
+            discussions and corrections.</p>
+        </li>
+        <li class="benefits-card">
+          <div class="benefits-icon">
+            <svg width="24" height="24" class="benefits-banges">
+              <use href="/portfolio-project-11/assets/sprite-f505d3aa.svg#icon-brush"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-title">Art</h3>
+          <p class="benefits-text">Thanks to my creative nature, I am ready to accept challenges and help you bring your
+            ideas to life. </p>
+        </li>
+        <li class="benefits-card">
+          <div class="benefits-icon">
+            <svg width="24" height="24" class="benefits-banges">
+              <use href="/portfolio-project-11/assets/sprite-f505d3aa.svg#icon-hourglass"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-title">Urgent execution</h3>
+          <p class="benefits-text">I understand how important time is to you. Ready to work quickly and efficiently,
+            without reducing the quality of work.</p>
+        </li>
+      </ul>
+      <button type="button" class="benefits-button">
+        <a href="#work-together"></a>
+        <p class="benefits-bt-text">Order the project</p>
+
+      </button>
     </div>
 
-</div>
-</section> 
-  <section id class="section">
+  </div>
+</section>
+  <section id="projects" class="section">
   <div class="container">
     <h2 class="title">Projects</h2>
     <div class="project-content">
@@ -381,11 +349,8 @@
                 <h2>
                   Programming Across Borders: Ideas, Technologies, Innovations
                 </h2>
-                <a
-                  href="https://github.com/Juliase4/portfolio-project-11/tree/start_projects"
-                  class="button"
-                  >Новый текст кнопки</a
-                >
+                <a href="https://github.com/Juliase4/portfolio-project-11/tree/start_projects" class="button">Новый
+                  текст кнопки</a>
               </div>
             </div>
           </div>
@@ -404,11 +369,8 @@
                 <h2>
                   Programming Across Borders: Ideas, Technologies, Innovations
                 </h2>
-                <a
-                  href="https://github.com/Juliase4/portfolio-project-11/tree/start_projects"
-                  class="button"
-                  >Новый текст кнопки</a
-                >
+                <a href="https://github.com/Juliase4/portfolio-project-11/tree/start_projects" class="button">Новый
+                  текст кнопки</a>
               </div>
             </div>
           </div>
@@ -427,11 +389,8 @@
                 <h2>
                   Programming Across Borders: Ideas, Technologies, Innovations
                 </h2>
-                <a
-                  href="https://github.com/Juliase4/portfolio-project-11/tree/start_projects"
-                  class="button"
-                  >Новый текст кнопки</a
-                >
+                <a href="https://github.com/Juliase4/portfolio-project-11/tree/start_projects" class="button">Новый
+                  текст кнопки</a>
               </div>
             </div>
           </div>
@@ -452,14 +411,12 @@
     </div>
   </div>
 </section>
-
-  <section class="faq-section section" id="#faq">
-    <div class="container">
-        <h2 class="title">FAQ</h2>
-        <ul class="faq-list list"></ul>
-    </div>
+  <section class="faq-section section" id="faq">
+  <div class="container">
+    <h2 class="title">FAQ</h2>
+    <ul class="faq-list list"></ul>
+  </div>
 </section>
-
   
   <section class="reviews section">
   <div class="container">
@@ -484,23 +441,21 @@
 </section>
 
   <section id="work-together">
-    <div class="work-div">
-        <img class="img-together" 
-        src="../img/mobile/logo-80@1x.jpg" 
-        srcset="../img/mobile/logo-80@2x.jpg 2x" 
-        alt="logo"
-        width="44px"
-        height="44px" /><h1 class="work-together-text">LET'S <span>WORK</span></h1>
-    </div>
-    <h1 class="together">TOGETHER</h1>
-    <form>
-        <input type="email" name="email" id="email" placeholder="clients@gmail.com">
-        <input type="text" id="form-text" placeholder="comments">
-        <button class="submit-button" id="btn-submit">Send</button>
-    </form>
-    <div>
-        <a href="tel:+380983582418" class="phone-number">+ 380 98 358 24 18</a><a href="mailto:lloydjefferson@gmail.com" class="mail-link">lloydjefferson@gmail.com</a>
-    </div>
+  <div class="work-div">
+    <img class="img-together" src="../img/mobile/logo-80@1x.jpg" srcset="../img/mobile/logo-80@2x.jpg 2x" alt="logo"
+         width="44px" height="44px" />
+    <h1 class="work-together-text">LET'S <span>WORK</span></h1>
+  </div>
+  <h1 class="together">TOGETHER</h1>
+  <form>
+    <input type="email" name="email" id="email" placeholder="clients@gmail.com">
+    <input type="text" id="form-text" placeholder="comments">
+    <button class="submit-button" id="btn-submit">Send</button>
+  </form>
+  <div>
+    <a href="tel:+380983582418" class="phone-number">+ 380 98 358 24 18</a><a href="mailto:lloydjefferson@gmail.com"
+       class="mail-link">lloydjefferson@gmail.com</a>
+  </div>
 </section>
   <div class="mobile-menu">
   <div class="container mobile-menu-container">
@@ -526,7 +481,7 @@
       </ul>
     </nav>
     <div class="mob-btn-wrapper">
-      <button class="mob-button" type="submit">Order the project</button>
+      <button class="mob-button" type="button"><a class="link" href="#work-together">Order the project</a></button>
     </div>
   </div>
 </div>
