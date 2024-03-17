@@ -45,7 +45,7 @@
   color: rgba(250, 250, 250, 0.6);
 
   overflow-y: auto;
-  max-height: 100px;
+  max-height: 100%;
 }
 
 .reviews-slider-btn {
