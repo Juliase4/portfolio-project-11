@@ -1,4 +1,5 @@
 import Swiper from 'swiper';
+import iziToast from 'izitoast';
 
 const reviewsList = document.querySelector('.reviews-list');
 const prevButton = document.querySelector('.rev-swiper-button-prev-js');
