@@ -1,5 +1,8 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
+import Swiper from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 const container = document.querySelector('.advantages');
 
@@ -51,7 +54,7 @@ function createAdvantagesEl() {
     </div>
   </li>`
     )
-    .join();
+    .join('');
 
   container.insertAdjacentHTML('afterbegin', markup);
 }
@@ -64,4 +67,54 @@ new Accordion(container, {
   elementClass: 'advantages__item',
   triggerClass: 'advantages__ac',
   panelClass: 'advantages__panel',
+});
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horisontal',
+  modules: [Navigation, Pagination],
+
+  modules: [Navigation],
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+
+  //Керування колесом миші
+  mousewheel: {
+    //Чутливість колеса миші
+    sensitivity: 1,
+    //Керування колесом миші
+    // eventsTarget: '.swiper-slide',
+  },
+
+  //Кількість слайдів для показу
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+
+  breakpoints: {
+    // when window width is >= 375px
+    375: {
+      slidesPerView: 2,
+      // spaceBetween: 0,
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 3,
+      // spaceBetween: 0,
+    },
+    // when window width is >= 1440px
+    1440: {
+      slidesPerView: 6,
+      // spaceBetween: 0,
+    },
+  },
 });
