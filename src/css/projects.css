@@ -57,7 +57,7 @@
   pointer-events: none;
 }
 
-.project-content{
+.project-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,6 +66,75 @@
 .interior-style {
   display: flex;
   flex-direction: row-reverse;
-   background-color: var(--cards);
-  border-radius: 20px;
+  background-color: var(--cards);
+  border-radius: 24px;
+}
+
+.filling-slide {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: var(--main-text);
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+.list-style {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  padding-left: 64px;
+  padding-bottom: 223px;
+  margin-top: 64px;
+}
+
+.reviews-slider {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-li-style {
+  border: solid 1px;
+  border-radius: 60px;
+  padding: 18px;
+  border-color: rgba(28, 29, 32, 0.2);
+}
+
+.prjkt-ing {
+  margin: 120px 37px;
+}
+
+.slide-description {
+  text-align: left;
+  margin-left: 64px;
+  margin-bottom: 32px;
+  margin-right: 130px;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  max-width: 494px;
+  max-height: 132px;
+}
+
+.project-button {
+  text-decoration: none;
+  height: auto;
+  width: auto;
+  padding: 18px 50px;
+  margin-bottom: 64px;
+  margin-left: 64px;
+  border-radius: 60px;
+  background-color: rgba(237, 59, 68, 1);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+  background-color: rgba(224, 55, 63, 1);
 }
