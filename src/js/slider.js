@@ -23,6 +23,7 @@ const swiper = new Swiper('.reviews .swiper', {
     el: '.swiper-scrollbar',
   },
 });
+
 const slider = document.querySelector('.slider');
 const slides = document.querySelectorAll('.slide');
 const prevButton = document.querySelector('.prev');

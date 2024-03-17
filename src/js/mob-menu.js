@@ -1,21 +1,11 @@
-// const modal = document.querySelector('.mobile-menu');
-// const closeBtn = document.querySelector('.mobile-menu-close-btn');
-// const backdrop = document.querySelector('.mobile-menu-container');
+const closeButton = document.querySelector('.mobile-menu-close-btn');
+const burgerBtn = document.querySelector('.header-mobile-open-btn');
+const menu = document.querySelector('.mobile-menu');
 
-// const closeModal = () => {
-//   modal.classList.remove('is-open');
-// };
-// closeBtn.addEventListener('click', closeModal);
+closeButton.addEventListener('click', () => {
+  menu.classList.toggle('is-open');
+});
 
-// backdrop.addEventListener('click', event => {
-//   if (event.target === backdrop) {
-//     closeModal();
-//   }
-// });
-
-// document.addEventListener('keydown', event => {
-//   if (event.key === 'Escape') {
-//     closeModal();
-//   }
-//   return;
-// });
+burgerBtn.addEventListener('click', () => {
+  menu.classList.toggle('is-open');
+});
