@@ -99,6 +99,10 @@ screen and (min-device-pixel-ratio: 2) {
   height: 45px;
   background-color: var(--accent-color);
 
+
+}
+
+.mob-button a {
   font-family: inherit;
   font-weight: 500;
   font-size: 14px;
