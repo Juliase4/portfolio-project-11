@@ -90,10 +90,16 @@
 .list-style {
   list-style-type: none;
   display: flex;
-  gap: 30px;
+  gap: 6px;
   padding-left: 64px;
   padding-bottom: 223px;
   margin-top: 64px;
+}
+
+@media screen and (max-width: 767px) {
+  .list-style {
+    padding-bottom: 164px;
+  }
 }
 
 .reviews-slider {
