@@ -1,7 +1,7 @@
 // import Swiper JS
 import Swiper from 'swiper';
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.reviews .swiper', {
   // Optional parameters
   direction: 'vertical',
   loop: true,
@@ -14,8 +14,8 @@ const swiper = new Swiper('.swiper', {
   // Navigation arrows
   navigation: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.reviews .swiper-button-next',
+    prevEl: '.reviews .swiper-button-prev',
   },
 
   // And if we need scrollbar
