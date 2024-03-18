@@ -1,16 +1,6 @@
-.reviews-cards {
-  margin-bottom: 30px;
-}
-
-.reviews-list {
-  flex-direction: row;
-  gap: 16px;
-}
-
 .reviews-item {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
-  max-width: 343px;
   height: 302px;
 
   padding: 30px 24px;
@@ -46,8 +36,6 @@
   max-height: 100px;
 }
 
-.reviews-slider-arrow {}
-
 .reviews-slider-arrow-icon {
   stroke: var(--main-text);
   stroke-width: 2px;
@@ -71,10 +59,10 @@
   }
 }
 
-.rev-wrapp {
+.reviews-slider-btn {
   display: flex;
-  gap: 16px;
   justify-content: center;
+  gap: 20px;
 }
 
 .reviews-slider-arrow.swiper-button-lock {
