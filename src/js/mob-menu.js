@@ -9,3 +9,12 @@ closeButton.addEventListener('click', () => {
 burgerBtn.addEventListener('click', () => {
   menu.classList.toggle('is-open');
 });
+
+const dropdownBtn = document.querySelector('.dropdown-nav-dropbtn');
+const dropdownList = document.querySelector('.dropdown-nav-list');
+
+dropdownBtn.addEventListener('click', () => {
+  dropdownList.classList.toggle('visually-hidden');
+}
+)
+
