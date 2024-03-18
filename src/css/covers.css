@@ -1,6 +1,5 @@
 .covers-section {
   position: relative;
-  height: 960px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -11,7 +10,7 @@
   height: 100%;
   left: 0;
   top: 0;
-  background: url("../img/desktop/covers_vectors.png");
+  background: url("./img/desktop/covers_vectors.png");
 }
 
 .covers-list {
