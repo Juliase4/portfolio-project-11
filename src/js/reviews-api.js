@@ -3,6 +3,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+
 const reviewsList = document.querySelector('.reviews-list');
 
 const API_URL = 'https://portfolio-js.b.goit.study/api/reviews';
@@ -29,8 +32,23 @@ async function fetchReviews() {
     // Викликаємо функцію ініціалізації Swiper після отримання даних
     initSwiper();
   } catch (error) {
+    iziToast.warning({
+      message: 'An error occurred while fetching data from the server!',
+      messageColor: 'black',
+      backgroundColor: '#ffac26',
+      position: 'topRight',
+      pauseOnHover: false,
+      progressBarColor: 'black',
+      timeout: 3000,
+    });
     console.error('Fetch error:', error);
+    renderError();
   }
+}
+
+function renderError() {
+  reviewsList.innerHTML = '<p class="not-found">Not found</p>';
+  console.log('Error rendered: Not found');
 }
 
 function renderReviews(reviews) {
