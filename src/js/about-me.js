@@ -91,7 +91,7 @@ const mySwiper = new Swiper('.my-swiper', {
     //Чутливість колеса миші
     sensitivity: 1,
     //Керування колесом миші
-    // eventsTarget: '.swiper-slide',
+    eventsTarget: '.swiper-slide',
   },
 
   //Кількість слайдів для показу
@@ -115,4 +115,8 @@ const mySwiper = new Swiper('.my-swiper', {
       spaceBetween: 0,
     },
   },
+});
+
+document.addEventListener('keydown', evt => {
+  console.log(evt.code);
 });
