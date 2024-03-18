@@ -26,7 +26,7 @@ function moveCovers() {
         parseFloat(
           cover.style.transform.replace('translateX(', '').replace('px)', '')
         ) || 0;
-      currentPosition -= 3;
+      currentPosition -= 0.3;
       cover.style.transform = `translateX(${currentPosition}px)`;
 
       if (currentPosition <= list.offsetWidth) {
