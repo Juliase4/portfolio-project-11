@@ -283,15 +283,19 @@ form {
   .phone-number {
     padding: 18px 32px 18px 32px;
     margin-right: 8px;
-    box-sizing: content-box;
+
   }
 
   .mail-link {
     padding: 18px 32px 18px 32px;
-    box-sizing: content-box;
+
   }
 }
 
+.div-contact {
+  display: flex;
+  width: max-content;
+}
 
 
 
