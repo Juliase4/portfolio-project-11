@@ -80,19 +80,19 @@ const mySwiper = new Swiper('.my-swiper', {
     nextEl: '.about__section .swiper-button-next',
   },
 
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-    pageUpDown: true,
-  },
+  // keyboard: {
+  //   enabled: true,
+  //   onlyInViewport: true,
+  //   pageUpDown: true,
+  // },
 
   //Керування колесом миші
-  mousewheel: {
-    //Чутливість колеса миші
-    sensitivity: 1,
-    //Керування колесом миші
-    // eventsTarget: '.swiper-slide',
-  },
+  // mousewheel: {
+  //   //Чутливість колеса миші
+  //   sensitivity: 1,
+  //   //Керування колесом миші
+  //   eventsTarget: '.swiper-slide',
+  // },
 
   //Кількість слайдів для показу
   slidesPerView: 1,
