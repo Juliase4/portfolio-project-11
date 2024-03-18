@@ -85,3 +85,8 @@
   color: transparent;
   background-color: transparent;
 }
+
+.not-found {
+  font-size: 18px;
+  color: var(--main-text);
+}
