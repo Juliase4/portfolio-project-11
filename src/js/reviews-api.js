@@ -72,10 +72,10 @@ function renderReviews(reviews) {
 function initSwiper() {
   const newSwiper = new Swiper('.reviews-cards', {
     modules: [Navigation],
-    // loop: true,
+
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.reviews .swiper-button-next',
+      prevEl: '.reviews .swiper-button-prev',
     },
     keyboard: {
       enabled: true,
