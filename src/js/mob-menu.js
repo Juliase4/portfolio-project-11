@@ -17,4 +17,3 @@ dropdownBtn.addEventListener('click', () => {
   dropdownList.classList.toggle('visually-hidden');
 }
 )
-
