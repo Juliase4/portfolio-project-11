@@ -80,11 +80,11 @@ const mySwiper = new Swiper('.my-swiper', {
     nextEl: '.about__section .swiper-button-next',
   },
 
-  // keyboard: {
-  //   enabled: true,
-  //   onlyInViewport: true,
-  //   pageUpDown: true,
-  // },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
 
   //Керування колесом миші
   // mousewheel: {
