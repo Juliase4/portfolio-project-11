@@ -7,15 +7,12 @@
   padding-bottom: 32px;
 }
 
-.hidden {
-  display: none;
-}
-
 .thumb {
   display: flex;
   justify-content: center;
   border-radius: 24px;
   max-width: 343px;
+  width: 100%;
   height: 500px;
   background: var(--cards);
   padding: 32px;
@@ -32,10 +29,6 @@
   color: var(--main-text);
 }
 
-.functional {
-  color: var(--accent-color);
-}
-
 .websites {
   color: rgba(250, 250, 250, 0.4);
 }
@@ -43,8 +36,10 @@
 .about-me__img {
   border-radius: 24px;
   max-width: 343px;
+  width: 100%;
   height: 500px;
   background: var(--cards);
+  object-fit: cover;
 }
 
 @media screen and (min-width: 768px) {
@@ -82,10 +77,6 @@
   }
 
   .about-me {
-    padding-bottom: 32px;
-  }
-
-  .about-me {
     padding-bottom: 96px;
     display: flex;
     gap: 16px;
@@ -101,6 +92,22 @@
     max-width: 680px;
     height: 700px;
   }
+}
+
+/* Переваги */
+.about__section .advantages__ac::after {
+  content: '';
+  margin-left: 16px;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #fafafa33;
+  border-radius: 100%;
+  background: url('../img/icons/faq-icon.svg') no-repeat center / 20px 20px;
+  transition: 0.3s;
+}
+
+.about__section .advantages__item.is-active .advantages__ac::after {
+  transform: rotate(-180deg);
 }
 
 .advantages {
@@ -140,16 +147,11 @@
 }
 
 .advantages__text {
-  font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: -0.02em;
   color: var(--main-text);
-}
-
-.about {
-  margin-bottom: 32px;
 }
 
 .role,
@@ -203,81 +205,79 @@
   }
 }
 
+/* Навички */
 .skills__container {
-  display: flex;
-  align-items: center;
-  gap: 55px;
+  position: relative;
 }
 
-.skills {
-  display: flex;
-  align-items: center;
+.about__section .my-swiper {
+  margin: 0;
+  width: 260px;
+  position: static;
 }
 
 .about__section .skills__item {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   border-radius: 100%;
-  stroke-width: 1px;
-  stroke: rgba(250, 250, 250, 0.2);
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  width: 130px;
+  height: 130px;
+  position: relative;
+}
 
-  font-family: var(--font-family);
+.skills__item:hover {
+  background-color: var(--accent-color);
+}
+
+.skills__text {
+  width: 100%;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: -0.02em;
   color: var(--main-text);
-}
 
-/* .skills__item .swiper-slide {
-  width: 200px;
-  height: 200px;
-} */
-
-.skills__icon {
-  border-radius: 100%;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  stroke-width: 1px;
-  stroke: rgba(250, 250, 250, 0.2);
-  width: 130px;
-  height: 130px;
-}
-
-.skills__text {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.skills__arrow {
+.skills__container .swiper-button-next::after {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 40px;
+  height: 40px;
+  background: url('../img/icons/arrow-narrow-right.svg') no-repeat center / 30px 22px;
+  transition: 0.3s;
   stroke-width: 2px;
   stroke: var(--arrow);
-  fill: transparent;
-}
-
-.skills__icon:hover,
-.skills__icon:focus {
-  background-color: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
-  .skills__container {
-    gap: 64px;
-  }
-
-  .skills__icon {
+  .about__section .skills__item {
     width: 200px;
     height: 200px;
+  }
+
+  .about__section .my-swiper {
+    width: 600px;
+    height: 200px;
+  }
+
+  .skills__text {
+    font-size: 20px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .skills__container {
-    gap: 72px;
+    margin: 0 auto;
   }
 
-  .my-swiper {
-    width: 1312px;
+  .about__section .my-swiper {
+    width: 1200px;
     height: 200px;
   }
 }
