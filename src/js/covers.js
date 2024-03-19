@@ -53,7 +53,7 @@
 // document.addEventListener('DOMContentLoaded', moveCovers);
 // window.addEventListener('scroll', moveCovers);
 
-
+const coverSection = document.querySelector('.covers-section');
 const coversList = document.querySelectorAll('.covers-list');
 let coversWidthArr = [];
 
@@ -63,29 +63,34 @@ coversList.forEach(cover => {
 
 const coverMaxWidth = Math.max(...coversWidthArr);
 
-let currentOffset = -coverMaxWidth 
+let currentOffset = -coverMaxWidth;
 let isForward = true;
 
-function moveCovers(coversList, coverMaxWidth) {
-  coversList.forEach(cover => {
-    const offsetPercentage = ((currentOffset + coverMaxWidth) / ( coverMaxWidth)) * 100;
-    cover.style.transition = 'transform .3s';
-    cover.style.transform = `rotate(16deg) translateX(${-offsetPercentage}%)`;
+function moveCovers() {
+  const sectionRect = coverSection.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
 
-    if (isForward) {
-      currentOffset++;
-      if (currentOffset >= 0) {
-        isForward = false;
-      }
-    } else {
-      currentOffset--;
-      if (currentOffset <= -coverMaxWidth) {
-        isForward = true;
-      }
-    }
-  });
+  if (sectionRect.top < windowHeight && sectionRect.bottom > 0) {
+    coversList.forEach(cover => {
+      const offsetPercentage = ((currentOffset + coverMaxWidth) / coverMaxWidth) * 100;
+      cover.style.transition = 'transform .5s';
+      cover.style.transform = `rotate(16deg) translateX(${-offsetPercentage}%)`;
 
-  requestAnimationFrame(() => moveCovers(coversList, coverMaxWidth));
+      if (isForward) {
+        currentOffset++;
+        if (currentOffset >= 0) {
+          isForward = false;
+        }
+      } else {
+        currentOffset--;
+        if (currentOffset <= -coverMaxWidth) {
+          isForward = true;
+        }
+      }
+    });
+  }
+  
+  requestAnimationFrame(moveCovers);
 }
 
-moveCovers(coversList, coverMaxWidth);
+moveCovers();
