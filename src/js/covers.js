@@ -1,54 +1,91 @@
-const coversLists = document.querySelectorAll('.covers-list');
-let animationId;
-let isAnimating = false;
+// const coversLists = document.querySelectorAll('.covers-list');
+// let animationId;
+// let isAnimating = false;
 
-function moveCovers() {
-  if (isAnimating) return;
-  isAnimating = true;
+// function moveCovers() {
+//   if (isAnimating) return;
+//   isAnimating = true;
 
-  const coversSection = document.querySelector('.covers-section');
-  const coversSectionRect = coversSection.getBoundingClientRect();
-  const isCoversSectionVisible =
-    coversSectionRect.top < window.innerHeight && coversSectionRect.bottom >= 0;
+//   const coversSection = document.querySelector('.covers-section');
+//   const coversSectionRect = coversSection.getBoundingClientRect();
+//   const isCoversSectionVisible =
+//     coversSectionRect.top < window.innerHeight && coversSectionRect.bottom >= 0;
 
-  if (!isCoversSectionVisible) {
-    cancelAnimationFrame(animationId);
-    isAnimating = false;
-    return;
-  }
+//   if (!isCoversSectionVisible) {
+//     cancelAnimationFrame(animationId);
+//     isAnimating = false;
+//     return;
+//   }
 
-  let allCoversOutsideViewport = true;
+//   let allCoversOutsideViewport = true;
 
-  coversLists.forEach(list => {
-    const covers = list.querySelectorAll('.covers-item');
-    covers.forEach(cover => {
-      let currentPosition =
-        parseFloat(
-          cover.style.transform.replace('translateX(', '').replace('px)', '')
-        ) || 0;
-      currentPosition -= 0.3;
-      cover.style.transform = `translateX(${currentPosition}px)`;
+//   coversLists.forEach(list => {
+//     const covers = list.querySelectorAll('.covers-item');
+//     covers.forEach(cover => {
+//       let currentPosition =
+//         parseFloat(
+//           cover.style.transform.replace('translateX(', '').replace('px)', '')
+//         ) || 0;
+//       currentPosition -= 0.3;
+//       cover.style.transform = `translateX(${currentPosition}px)`;
 
-      if (currentPosition <= list.offsetWidth) {
-        allCoversOutsideViewport = false;
+//       if (currentPosition <= list.offsetWidth) {
+//         allCoversOutsideViewport = false;
+//       }
+//     });
+//   });
+
+//   if (allCoversOutsideViewport) {
+//     coversLists.forEach(list => {
+//       const covers = list.querySelectorAll('.covers-item');
+//       covers.forEach(cover => {
+//         cover.style.transform = 'translateX(0)';
+//       });
+//     });
+//   }
+
+//   animationId = requestAnimationFrame(() => {
+//     isAnimating = false;
+//     moveCovers();
+//   });
+// }
+
+// document.addEventListener('DOMContentLoaded', moveCovers);
+// window.addEventListener('scroll', moveCovers);
+
+
+const coversList = document.querySelectorAll('.covers-list');
+let coversWidthArr = [];
+
+coversList.forEach(cover => {
+  coversWidthArr.push(cover.scrollWidth);
+});
+
+const coverMaxWidth = Math.max(...coversWidthArr);
+
+let currentOffset = -coverMaxWidth 
+let isForward = true;
+
+function moveCovers(coversList, coverMaxWidth) {
+  coversList.forEach(cover => {
+    const offsetPercentage = ((currentOffset + coverMaxWidth) / ( coverMaxWidth)) * 100;
+    cover.style.transition = 'transform .3s';
+    cover.style.transform = `rotate(16deg) translateX(${-offsetPercentage}%)`;
+
+    if (isForward) {
+      currentOffset++;
+      if (currentOffset >= 0) {
+        isForward = false;
       }
-    });
+    } else {
+      currentOffset--;
+      if (currentOffset <= -coverMaxWidth) {
+        isForward = true;
+      }
+    }
   });
 
-  if (allCoversOutsideViewport) {
-    coversLists.forEach(list => {
-      const covers = list.querySelectorAll('.covers-item');
-      covers.forEach(cover => {
-        cover.style.transform = 'translateX(0)';
-      });
-    });
-  }
-
-  animationId = requestAnimationFrame(() => {
-    isAnimating = false;
-    moveCovers();
-  });
+  requestAnimationFrame(() => moveCovers(coversList, coverMaxWidth));
 }
 
-document.addEventListener('DOMContentLoaded', moveCovers);
-window.addEventListener('scroll', moveCovers);
+moveCovers(coversList, coverMaxWidth);
