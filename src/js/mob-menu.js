@@ -17,10 +17,9 @@ burgerBtn.addEventListener('click', () => {
   menu.classList.toggle('is-open');
 });
 
-const dropdownBtn = document.querySelector('.dropdown-nav-dropbtn');
+const dropdownBtn = document.querySelector('.dropdown-nav-btn');
 const dropdownList = document.querySelector('.dropdown-nav-list');
 
 dropdownBtn.addEventListener('click', () => {
   dropdownList.classList.toggle('visually-hidden');
 });
-
