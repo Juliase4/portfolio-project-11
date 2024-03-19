@@ -3,28 +3,17 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 
-const slides = document.querySelectorAll('.slide');
 
-let currentSlide = 0;
-
-function showSlide(slideIndex) {
-  slides.forEach((slide, index) => {
-    if (index === slideIndex) {
-      slide.classList.add('active');
-    } else {
-      slide.classList.remove('active');
-    }
-  });
-  initSwiper();
-}
-
-function initSwiper() {
-  const proSwiper = new Swiper('.slide', {
+  const proSwiper = new Swiper('.project-swiper', {
     modules: [Navigation],
-    // loop: true,
     navigation: {
-      nextEl: '.swiper-button-next-1',
-      prevEl: '.swiper-button-prev-1',
+      nextEl: '.project .swiper-button-next',
+      prevEl: '.project .swiper-button-prev',
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
     },
     slidesPerView: 1,
     slidesPerGroup: 1,
@@ -40,8 +29,4 @@ function initSwiper() {
       },
     },
   });
-}
 
-document.addEventListener('DOMContentLoaded', () => {
-  showSlide(currentSlide);
-});
