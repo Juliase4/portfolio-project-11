@@ -77,6 +77,11 @@ function initSwiper() {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+    },
     slidesPerView: 1,
     slidesPerGroup: 1,
     breakpoints: {
