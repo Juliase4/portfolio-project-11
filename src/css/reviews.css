@@ -33,7 +33,7 @@
   color: rgba(250, 250, 250, 0.6);
 
   overflow-y: auto;
-  max-height: 100px;
+  max-height: 120px;
 }
 
 .reviews-slider-arrow-icon {
@@ -43,7 +43,6 @@
 }
 
 .reviews-item.swiper-slide {
-  max-width: 343px;
   height: 302px;
 }
 
@@ -89,4 +88,9 @@
 .not-found {
   font-size: 18px;
   color: var(--main-text);
+}
+
+.reviews .swiper-button-prev:after,
+.reviews .swiper-button-next:after {
+  display: none;
 }

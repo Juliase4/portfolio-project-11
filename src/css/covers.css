@@ -3,14 +3,9 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-}
 
-.cover-container {
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: url("./img/desktop/covers_vectors.png");
+  background-image: url("../img/desktop/covers_vectors.png");
+  background-size: cover;
 }
 
 .covers-list {
@@ -20,10 +15,19 @@
   margin-bottom: 40px;
 
 }
+
 @keyframes slideAnimation {
-  0% { transform: rotate(16deg) translateX(0); }
-  50% { transform: rotate(16deg) translateX(var(--elementsCount)); }
-  100% { transform: rotate(16deg) translateX(0); }
+  0% {
+    transform: rotate(16deg) translateX(0);
+  }
+
+  50% {
+    transform: rotate(16deg) translateX(var(--elementsCount));
+  }
+
+  100% {
+    transform: rotate(16deg) translateX(0);
+  }
 }
 
 .animation .covers-list {
