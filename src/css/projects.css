@@ -172,3 +172,16 @@
     padding: 120px 37px;
   }
 }
+
+.swiper-button-prev-1,
+.swiper-button-next-1 {
+  border: 1px solid var(--main-text);
+  border-radius: 60px;
+  padding: 14px;
+  width: 52px;
+  height: 52px;
+  justify-content: center;
+  margin-top: 32px;
+  color: transparent;
+  background-color: transparent;
+}
