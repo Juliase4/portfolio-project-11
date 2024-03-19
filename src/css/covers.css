@@ -20,6 +20,15 @@
   margin-bottom: 40px;
 
 }
+@keyframes slideAnimation {
+  0% { transform: rotate(16deg) translateX(0); }
+  50% { transform: rotate(16deg) translateX(var(--elementsCount)); }
+  100% { transform: rotate(16deg) translateX(0); }
+}
+
+.animation .covers-list {
+  animation: slideAnimation 80s linear infinite;
+}
 
 @media screen and (min-width:768px) {
   .covers-list {

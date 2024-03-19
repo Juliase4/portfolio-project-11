@@ -50,47 +50,31 @@
 //   });
 // }
 
-// document.addEventListener('DOMContentLoaded', moveCovers);
-// window.addEventListener('scroll', moveCovers);
 
+
+const coverLists = document.querySelectorAll('.covers-list');
 const coverSection = document.querySelector('.covers-section');
-const coversList = document.querySelectorAll('.covers-list');
-let coversWidthArr = [];
 
-coversList.forEach(cover => {
-  coversWidthArr.push(cover.scrollWidth);
-});
+coverLists.forEach(elem=> {
+  const coversItems = elem.querySelectorAll('.covers-item');
+  const elementsCount = -coversItems.length * 22 + "%";
 
-const coverMaxWidth = Math.max(...coversWidthArr);
+  elem.style.setProperty('--elementsCount', elementsCount);
+})
 
-let currentOffset = -coverMaxWidth;
-let isForward = true;
 
-function moveCovers() {
+function addActiveClass() {
   const sectionRect = coverSection.getBoundingClientRect();
   const windowHeight = window.innerHeight;
 
   if (sectionRect.top < windowHeight && sectionRect.bottom > 0) {
-    coversList.forEach(cover => {
-      const offsetPercentage = ((currentOffset + coverMaxWidth) / coverMaxWidth) * 100;
-      cover.style.transition = 'transform .5s';
-      cover.style.transform = `rotate(16deg) translateX(${-offsetPercentage}%)`;
-
-      if (isForward) {
-        currentOffset++;
-        if (currentOffset >= 0) {
-          isForward = false;
-        }
-      } else {
-        currentOffset--;
-        if (currentOffset <= -coverMaxWidth) {
-          isForward = true;
-        }
-      }
-    });
+    coverSection.classList.add('animation');
+  } else {
+    coverSection.classList.remove('animation');
   }
-  
-  requestAnimationFrame(moveCovers);
 }
 
-moveCovers();
+
+addActiveClass();
+
+window.addEventListener('scroll', addActiveClass);
