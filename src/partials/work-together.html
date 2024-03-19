@@ -8,7 +8,12 @@
     <h2 class="together">TOGETHER</h2>
     <div class="div-contact">
       <form class="work-form">
+        <div class="second-test">
         <input type="email" name="email" id="email" placeholder="clients@gmail.com">
+        <span class="error-message" style="display:none;">Invalid email, try again</span>
+        <div id="successMessage" class="success-message" style="display: none;">Success!</div>
+
+        </div>
         <input type="text" id="form-text" placeholder="comments">
         <button class="submit-button" id="btn-submit">Send</button>
       </form>
@@ -28,6 +33,7 @@
 <div id="modal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
+    <h2 id="modal-title"></h2>
     <p id="modal-message"></p>
   </div>
 </div>
