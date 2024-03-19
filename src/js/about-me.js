@@ -67,11 +67,8 @@ const accordion = new Accordion(container, {
   panelClass: 'advantages__panel',
 });
 
-<<<<<<< Updated upstream
 accordion.open(0);
 
-=======
->>>>>>> Stashed changes
 const mySwiper = new Swiper('.my-swiper', {
   modules: [Navigation],
   loop: true,
