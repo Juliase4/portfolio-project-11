@@ -59,7 +59,7 @@ function createAdvantagesEl() {
 
 createAdvantagesEl();
 
-new Accordion(container, {
+const accordion = new Accordion(container, {
   duration: 400,
   showMultiple: true,
   elementClass: 'advantages__item',
@@ -67,10 +67,11 @@ new Accordion(container, {
   panelClass: 'advantages__panel',
 });
 
-// <svg class="advantages__icon" width="18" height="18">
-//           <use href="./img/icons/sprite.svg#icon-arrow-down"></use>
-//         </svg>
+<<<<<<< Updated upstream
+accordion.open(0);
 
+=======
+>>>>>>> Stashed changes
 const mySwiper = new Swiper('.my-swiper', {
   modules: [Navigation],
   loop: true,
@@ -86,7 +87,7 @@ const mySwiper = new Swiper('.my-swiper', {
     pageUpDown: true,
   },
 
-  //Керування колесом миші
+  // // Керування колесом миші
   // mousewheel: {
   //   //Чутливість колеса миші
   //   sensitivity: 1,
