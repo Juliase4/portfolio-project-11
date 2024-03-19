@@ -15,7 +15,7 @@
   <script type="module" crossorigin src="/portfolio-project-11/commonHelpers.js"></script>
   <link rel="modulepreload" crossorigin href="/portfolio-project-11/assets/vendor-84cdfaf6.js">
   <link rel="stylesheet" href="/portfolio-project-11/assets/vendor-a776dd97.css">
-  <link rel="stylesheet" href="/portfolio-project-11/assets/index-d030125d.css">
+  <link rel="stylesheet" href="/portfolio-project-11/assets/index-5e1c444a.css">
 </head>
 
 <body>
@@ -214,13 +214,12 @@
 
   </div>
 </section>
-  <section id="projects" class="section">
+  <section id="projects" class="section project">
   <div class="container">
     <h2 class="title">Projects</h2>
-    <div class="project-content">
-
-      <div class="slides">
-        <div class="slide">
+    <div class="project-content swiper project-swiper" tabindex="0">
+      <div class="swiper-wrapper">
+        <div class="slide swiper-slide">
           <div class="interior-style">
             <picture class="project-picture">
               <source media="(max-width: 767px)" srcset="/portfolio-project-11/assets/proj-registration-bb814f8b.jpg 1x, /portfolio-project-11/assets/proj-registration@2-91bd40fd.jpg 2x" />
@@ -244,7 +243,7 @@
             </div>
           </div>
         </div>
-        <div class="slide">
+        <div class="slide swiper-slide">
           <div class="interior-style">
             <picture class="project-picture">
               <source media="(max-width: 767px)" srcset="/portfolio-project-11/assets/proj-main-23d9aff9.jpg 1x, /portfolio-project-11/assets/proj-main@2-9e619840.jpg 2x" />
@@ -269,7 +268,7 @@
             </div>
           </div>
         </div>
-        <div class="slide">
+        <div class="slide swiper-slide">
           <div class="interior-style">
             <picture class="project-picture">
               <source media="(max-width: 767px)" srcset="/portfolio-project-11/assets/proj-register-1d941a87.jpg 1x, /portfolio-project-11/assets/proj-register@2-7fedd50e.jpg 2x" />
@@ -296,15 +295,15 @@
         </div>
       </div>
 
-      <div class="projects-slider reviews-slider-btn">
-        <button class="swiper-button-prev-1">
+      <div class="project-btns">
+        <button class="swiper-button-prev">
           <svg class="reviews-slider-arrow-icon" width="24" height="24">
-            <use href="/portfolio-project-11/assets/sprite-30157757.svg#icon-arrow-left"></use>
+            <use href='/portfolio-project-11/assets/sprite-30157757.svg#icon-arrow-left'></use>
           </svg>
         </button>
-        <button class="swiper-button-next-1">
+        <button class="swiper-button-next">
           <svg class="reviews-slider-arrow-icon" width="24" height="24">
-            <use href="/portfolio-project-11/assets/sprite-30157757.svg#icon-arrow-right"></use>
+            <use href='/portfolio-project-11/assets/sprite-30157757.svg#icon-arrow-right'></use>
           </svg>
         </button>
       </div>
@@ -320,74 +319,77 @@
   <section class="covers-section section">
   <div class="covers-container container">
     <h2 class="visually-hidden title">Gallery</h2>
-    <ul class="covers-list">
-      <li class="covers-item list"><img srcset="./img/desktop/covers-7-min.jpg x1, ./img/desktop/covers-7@2-min.jpg x2
-        " src="/portfolio-project-11/assets/covers-7-min-d20414c1.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-5-min.jpg x1, ./img/desktop/covers-5@2-min.jpg x2
-        " src="/portfolio-project-11/assets/covers-5-min-86041c09.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-9-min.jpg x1, ./img/desktop/covers-9@2-min.jpg x2
-        " src="/portfolio-project-11/assets/covers-9-min-ec51cb04.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-2-min.jpg x1, ./img/desktop/covers-2@2-min.jpg x2
-        " src="/portfolio-project-11/assets/covers-2-min-18039d61.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-6-min.jpg x1, ./img/desktop/covers-6@2-min.jpg x2
-        " src="/portfolio-project-11/assets/covers-6-min-d5a6e827.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-3-min.jpg x1, ./img/desktop/covers-3@2-min.jpg x2
-        " src="/portfolio-project-11/assets/covers-3-min-3a9dd024.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-1-min.jpg x1, ./img/desktop/covers-1@2-min.jpg x2
-        " src="/portfolio-project-11/assets/covers-1-min-dc5a1c34.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-4-min.jpg x1, ./img/desktop/covers-4@2-min.jpg x2
-        " src="/portfolio-project-11/assets/covers-4-min-0d29f8e7.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-8-min.jpg x1, ./img/desktop/covers-8@2-min.jpg x2
-        " src="/portfolio-project-11/assets/covers-8-min-0db2fa14.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-10-min.jpg x1, ./img/desktop/covers-10@2-min.jpg x2
-        " src="/portfolio-project-11/assets/covers-10-min-5b96ea05.jpg" class="covers-img" alt=""></li>
-    </ul>
+    <div class="covers">
+      <ul class="covers-list">
+        <li class="covers-item list"><img srcset="./img/desktop/covers-7-min.jpg x1, ./img/desktop/covers-7@2-min.jpg x2
+          " src="/portfolio-project-11/assets/covers-7-min-d20414c1.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-5-min.jpg x1, ./img/desktop/covers-5@2-min.jpg x2
+          " src="/portfolio-project-11/assets/covers-5-min-86041c09.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-9-min.jpg x1, ./img/desktop/covers-9@2-min.jpg x2
+          " src="/portfolio-project-11/assets/covers-9-min-ec51cb04.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-2-min.jpg x1, ./img/desktop/covers-2@2-min.jpg x2
+          " src="/portfolio-project-11/assets/covers-2-min-18039d61.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-6-min.jpg x1, ./img/desktop/covers-6@2-min.jpg x2
+          " src="/portfolio-project-11/assets/covers-6-min-d5a6e827.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-3-min.jpg x1, ./img/desktop/covers-3@2-min.jpg x2
+          " src="/portfolio-project-11/assets/covers-3-min-3a9dd024.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-1-min.jpg x1, ./img/desktop/covers-1@2-min.jpg x2
+          " src="/portfolio-project-11/assets/covers-1-min-dc5a1c34.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-4-min.jpg x1, ./img/desktop/covers-4@2-min.jpg x2
+          " src="/portfolio-project-11/assets/covers-4-min-0d29f8e7.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-8-min.jpg x1, ./img/desktop/covers-8@2-min.jpg x2
+          " src="/portfolio-project-11/assets/covers-8-min-0db2fa14.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-10-min.jpg x1, ./img/desktop/covers-10@2-min.jpg x2
+          " src="/portfolio-project-11/assets/covers-10-min-5b96ea05.jpg" class="covers-img" alt=""></li>
+      </ul>
 
-    <ul class="covers-list">
-      <li class="covers-item list"><img srcset="./img/desktop/covers-1-min.jpg x1, ./img/desktop/covers-1@2-min.jpg x2"
-             src="/portfolio-project-11/assets/covers-1-min-dc5a1c34.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-8-min.jpg x1, ./img/desktop/covers-8@2-min.jpg x2"
-             src="/portfolio-project-11/assets/covers-8-min-0db2fa14.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-4-min.jpg x1, ./img/desktop/covers-4@2-min.jpg x2"
-             src="/portfolio-project-11/assets/covers-4-min-0d29f8e7.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-9-min.jpg x1, ./img/desktop/covers-9@2-min.jpg x2"
-             rc="./img/desktop/covers-9-min.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-2-min.jpg x1, ./img/desktop/covers-2@2-min.jpg x2
-        " src="/portfolio-project-11/assets/covers-2-min-18039d61.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-6-min.jpg x1, ./img/desktop/covers-6@2-min.jpg x2"
-             src="/portfolio-project-11/assets/covers-6-min-d5a6e827.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img
-             srcset="./img/desktop/covers-10-min.jpg x1, ./img/desktop/covers-10@2-min.jpg x2"
-             src="/portfolio-project-11/assets/covers-10-min-5b96ea05.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-3-min.jpg x1, ./img/desktop/covers-3@2-min.jpg x2"
-             src="/portfolio-project-11/assets/covers-3-min-3a9dd024.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-7-min.jpg x1, ./img/desktop/covers-7@2-min.jpg x2"
-             src="/portfolio-project-11/assets/covers-7-min-d20414c1.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-5-min.jpg x1, ./img/desktop/covers-5@2-min.jpg x2"
-             src="/portfolio-project-11/assets/covers-5-min-86041c09.jpg" class="covers-img" alt=""></li>
-    </ul>
-    <ul class="covers-list">
-      <li class="covers-item list"><img srcset="./img/desktop/covers-6-min.jpg x1, ./img/desktop/covers-6@2-min.jpg x2
-        " src="/portfolio-project-11/assets/covers-6-min-d5a6e827.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-2-min.jpg x1, ./img/desktop/covers-2@2-min.jpg x2
-        " src="/portfolio-project-11/assets/covers-2-min-18039d61.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-3-min.jpg x1, ./img/desktop/covers-3@2-min.jpg x2
-        " src="/portfolio-project-11/assets/covers-3-min-3a9dd024.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-5-min.jpg x1, ./img/desktop/covers-5@2-min.jpg x2
-        " src="/portfolio-project-11/assets/covers-5-min-86041c09.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-7-min.jpg x1, ./img/desktop/covers-7@2-min.jpg x2
-        " src="/portfolio-project-11/assets/covers-7-min-d20414c1.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-1-min.jpg x1, ./img/desktop/covers-1@2-min.jpg x2
-        " src="/portfolio-project-11/assets/covers-1-min-dc5a1c34.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-8-min.jpg x1, ./img/desktop/covers-8@2-min.jpg x2
-        " src="/portfolio-project-11/assets/covers-8-min-0db2fa14.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-4-min.jpg x1, ./img/desktop/covers-4@2-min.jpg x2
-        " src="/portfolio-project-11/assets/covers-4-min-0d29f8e7.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-10-min.jpg x1, ./img/desktop/covers-10@2-min.jpg x2
-        " src="/portfolio-project-11/assets/covers-10-min-5b96ea05.jpg" class="covers-img" alt=""></li>
-      <li class="covers-item list"><img srcset="./img/desktop/covers-9-min.jpg x1, ./img/desktop/covers-9@2-min.jpg x2
-        " src="/portfolio-project-11/assets/covers-9-min-ec51cb04.jpg" class="covers-img" alt=""></li>
-    </ul>
+      <ul class="covers-list">
+        <li class="covers-item list"><img srcset="./img/desktop/covers-1-min.jpg x1, ./img/desktop/covers-1@2-min.jpg x2"
+              src="/portfolio-project-11/assets/covers-1-min-dc5a1c34.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-8-min.jpg x1, ./img/desktop/covers-8@2-min.jpg x2"
+              src="/portfolio-project-11/assets/covers-8-min-0db2fa14.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-4-min.jpg x1, ./img/desktop/covers-4@2-min.jpg x2"
+              src="/portfolio-project-11/assets/covers-4-min-0d29f8e7.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-9-min.jpg x1, ./img/desktop/covers-9@2-min.jpg x2"
+              rc="./img/desktop/covers-9-min.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-2-min.jpg x1, ./img/desktop/covers-2@2-min.jpg x2
+          " src="/portfolio-project-11/assets/covers-2-min-18039d61.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-6-min.jpg x1, ./img/desktop/covers-6@2-min.jpg x2"
+              src="/portfolio-project-11/assets/covers-6-min-d5a6e827.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img
+              srcset="./img/desktop/covers-10-min.jpg x1, ./img/desktop/covers-10@2-min.jpg x2"
+              src="/portfolio-project-11/assets/covers-10-min-5b96ea05.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-3-min.jpg x1, ./img/desktop/covers-3@2-min.jpg x2"
+              src="/portfolio-project-11/assets/covers-3-min-3a9dd024.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-7-min.jpg x1, ./img/desktop/covers-7@2-min.jpg x2"
+              src="/portfolio-project-11/assets/covers-7-min-d20414c1.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-5-min.jpg x1, ./img/desktop/covers-5@2-min.jpg x2"
+              src="/portfolio-project-11/assets/covers-5-min-86041c09.jpg" class="covers-img" alt=""></li>
+      </ul>
+      
+      <ul class="covers-list">
+        <li class="covers-item list"><img srcset="./img/desktop/covers-6-min.jpg x1, ./img/desktop/covers-6@2-min.jpg x2
+          " src="/portfolio-project-11/assets/covers-6-min-d5a6e827.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-2-min.jpg x1, ./img/desktop/covers-2@2-min.jpg x2
+          " src="/portfolio-project-11/assets/covers-2-min-18039d61.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-3-min.jpg x1, ./img/desktop/covers-3@2-min.jpg x2
+          " src="/portfolio-project-11/assets/covers-3-min-3a9dd024.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-5-min.jpg x1, ./img/desktop/covers-5@2-min.jpg x2
+          " src="/portfolio-project-11/assets/covers-5-min-86041c09.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-7-min.jpg x1, ./img/desktop/covers-7@2-min.jpg x2
+          " src="/portfolio-project-11/assets/covers-7-min-d20414c1.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-1-min.jpg x1, ./img/desktop/covers-1@2-min.jpg x2
+          " src="/portfolio-project-11/assets/covers-1-min-dc5a1c34.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-8-min.jpg x1, ./img/desktop/covers-8@2-min.jpg x2
+          " src="/portfolio-project-11/assets/covers-8-min-0db2fa14.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-4-min.jpg x1, ./img/desktop/covers-4@2-min.jpg x2
+          " src="/portfolio-project-11/assets/covers-4-min-0d29f8e7.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-10-min.jpg x1, ./img/desktop/covers-10@2-min.jpg x2
+          " src="/portfolio-project-11/assets/covers-10-min-5b96ea05.jpg" class="covers-img" alt=""></li>
+        <li class="covers-item list"><img srcset="./img/desktop/covers-9-min.jpg x1, ./img/desktop/covers-9@2-min.jpg x2
+          " src="/portfolio-project-11/assets/covers-9-min-ec51cb04.jpg" class="covers-img" alt=""></li>
+      </ul>
+    </div>
   </div>
 </section>
   <section class="reviews section">
