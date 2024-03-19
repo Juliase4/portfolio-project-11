@@ -1,5 +1,7 @@
-// import Swiper JS
 import Swiper from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
 
 const slider = document.querySelector('.slider');
 const slides = document.querySelectorAll('.slide');
@@ -41,3 +43,30 @@ nextButton.addEventListener('click', () => {
 });
 
 showSlide(currentSlide);
+
+function initSwiper() {
+  const newSwiper = new Swiper('.reviews-cards', {
+    modules: [Navigation],
+    // loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    breakpoints: {
+      375: {
+        slidesPerView: 1,
+        spaceBetween: 16,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 16,
+      },
+      1440: {
+        slidesPerView: 4,
+        spaceBetween: 16,
+      },
+    },
+  });
+}
