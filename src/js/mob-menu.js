@@ -2,9 +2,16 @@ const closeButton = document.querySelector('.mobile-menu-close-btn');
 const burgerBtn = document.querySelector('.header-mobile-open-btn');
 const menu = document.querySelector('.mobile-menu');
 const menuItems = document.querySelectorAll('.mob-menu-list-item');
+const menuBtn = document.querySelectorAll('.mob-button-link');
 
 menuItems.forEach(item => {
   item.addEventListener('click', () => {
+    menu.classList.remove('is-open');
+  });
+});
+
+menuBtn.forEach(link => {
+  link.addEventListener('click', () => {
     menu.classList.remove('is-open');
   });
 });

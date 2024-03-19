@@ -98,25 +98,17 @@ screen and (min-device-pixel-ratio: 2) {
   padding-bottom: 64px;
 }
 
-.mob-button {
-  border-radius: 60px;
-  padding: 14px 31px;
-  width: 164px;
-  height: 45px;
-  background-color: var(--accent-color);
-
-
-}
-
-.mob-button a {
+.mob-button-link {
+  display: inline-block;
   font-family: inherit;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.02em;
   color: var(--main-text);
+  background-color: var(--accent-color);
+  padding: 14px 31px;
+  border-radius: 60px;
 }
-
-
 
 @media screen and (min-width: 768px) {
   .mobile-menu {
