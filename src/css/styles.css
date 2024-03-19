@@ -18,6 +18,7 @@
 @import url('./modal-window.css');
 
 :root {
+  --font-family: 'Inter Tight', sans-serif;
   --background: #1c1d20;
   --cards: #242527;
   --arrow: #3b3b3b;
@@ -27,7 +28,14 @@
 
 @font-face {
   font-family: 'Inter Tight', sans-serif;
-  src: local('Inter Tight'), url(/src/fonts/InterTight-VariableFont_wght.ttf);
+  src: url('src/fonts/InterTight-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Inter Tight', sans-serif;
+  src: url('src/fonts/InterTight-SemiBold.ttf');
+  font-weight: 600;
 }
 
 body {
