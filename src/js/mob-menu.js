@@ -23,3 +23,4 @@ const dropdownList = document.querySelector('.dropdown-nav-list');
 dropdownBtn.addEventListener('click', () => {
   dropdownList.classList.toggle('visually-hidden');
 });
+
