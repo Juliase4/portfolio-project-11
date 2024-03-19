@@ -71,6 +71,8 @@
   margin-left: 32px;
   margin-bottom: 32px;
   background-color: var(--accent-color);
+
+  transition: background-color 250ms linear;
 }
 
 .project-button:hover,
@@ -86,7 +88,6 @@
   padding: 13px 32px;
 
   color: var(--main-text);
-  transition: background-color 0.3s ease;
 }
 
 .project-content {

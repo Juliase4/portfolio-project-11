@@ -103,6 +103,8 @@ input {
   letter-spacing: -0.02em;
   text-align: center;
   transition: background 250ms;
+
+  transition: background-color 250ms linear;
 }
 
 .submit-button:hover,

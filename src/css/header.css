@@ -1,13 +1,13 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 
-.page-header-container{
+.page-header-container {
   position: absolute;
   background-color: transparent;
   top: 0%;
   left: 50%;
-  transform: translate(-50%,-0%);
+  transform: translate(-50%, -0%);
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -40,11 +40,12 @@ html{
 
 
 @media screen and (max-width: 767px) {
-
   .header-mobile-open-btn {
     background-color: transparent;
     padding: 0;
     line-height: 0;
+
+    transition: stroke 250ms linear;
   }
 
   .header-open-icon:hover {
@@ -70,18 +71,18 @@ html{
     padding: 18px 24px;
     white-space: nowrap;
     letter-spacing: 0.02em;
-    transition: opacity 1s ease;
+    transition: background-color 250ms linear;
   }
 
-  .page-header-btn-link:hover{
+  .page-header-btn-link:hover {
     background-color: #E0373F;
-    }
+  }
 
   .header-mobile-open-btn {
     display: none;
   }
 
-  .page-dropdown-nav{
+  .page-dropdown-nav {
     width: 67px;
     height: 39px;
   }
@@ -91,12 +92,12 @@ html{
     background-color: transparent;
     padding: 10px;
     text-decoration: underline;
-    transition: opacity 1s ease;
+    transition: color 250ms linear;
   }
 
   .dropdown-nav-btn:hover {
     color: var(--accent-color);
-    }
+  }
 
   .dropdown-nav-list {
     display: flex;
@@ -104,12 +105,12 @@ html{
     row-gap: 5px;
     align-items: center;
     white-space: nowrap;
-    transition: opacity 1s ease;      
   }
 
   .nav-menu-link {
     letter-spacing: 0.02em;
     color: var(--main-text);
+    transition: color 250ms linear;
   }
 
   .nav-menu-link:hover {
