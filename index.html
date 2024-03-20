@@ -15,7 +15,7 @@
   <script type="module" crossorigin src="/portfolio-project-11/commonHelpers.js"></script>
   <link rel="modulepreload" crossorigin href="/portfolio-project-11/assets/vendor-84cdfaf6.js">
   <link rel="stylesheet" href="/portfolio-project-11/assets/vendor-a776dd97.css">
-  <link rel="stylesheet" href="/portfolio-project-11/assets/index-5756efac.css">
+  <link rel="stylesheet" href="/portfolio-project-11/assets/index-37a2dfb2.css">
 </head>
 
 <body>
@@ -419,10 +419,15 @@
     <h2 class="together">TOGETHER</h2>
     <div class="div-contact">
       <form class="work-form">
-        <input class="work-input" type="email" name="email" id="email" placeholder="clients@gmail.com"
-               pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
-        <input class="work-input" type="text" id="form-text" placeholder="comments">
-        <button class="submit-button" id="btn-submit" type="submit">Send</button>
+
+        <div class="second-test">
+        <input type="email" name="email" id="email" placeholder="clients@gmail.com">
+        <span class="error-message" style="display:none;">Invalid email, try again</span>
+        <div id="successMessage" class="success-message" style="display: none;">Success!</div>
+
+        </div>
+        <input type="text" id="form-text" placeholder="comments">
+        <button class="submit-button" id="btn-submit">Send</button>
       </form>
       <address class="work-address">
         <ul class="work-address-list list">
@@ -442,9 +447,11 @@
 <div id="modal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
+    <h2 id="modal-title"></h2>
     <p id="modal-message"></p>
   </div>
 </div>
+
   <div class="mobile-menu">
   <div class="container mobile-menu-container">
     <button class="mobile-menu-close-btn" type="button">
