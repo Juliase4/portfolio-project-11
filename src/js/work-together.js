@@ -103,3 +103,21 @@ window.addEventListener('click', event => {
     closeModal();
   }
 });
+
+function handleInputOverflow(inputElement) {
+  return () => {
+    const isOverflowing = inputElement.scrollWidth > inputElement.clientWidth;
+    if (isOverflowing) {
+      // Добавляем многоточие в конце видимого текста
+      inputElement.title = inputElement.value;
+      inputElement.style.textOverflow = 'ellipsis';
+    } else {
+      // Убираем многоточие, если input не переполнен
+      inputElement.title = '';
+      inputElement.style.textOverflow = 'clip';
+    }
+  };
+}
+
+emailInput.addEventListener('input', handleInputOverflow(emailInput));
+commentsInput.addEventListener('input', handleInputOverflow(commentsInput));
