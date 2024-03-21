@@ -1,11 +1,11 @@
 <section class="about__section" id="about">
   <div class="container">
-    <h2 class="aboute__title hidden">Aboute me</h2>
+    <h2 class="about__title visually-hidden">About me</h2>
     <div class="about-me">
       <div class="thumb">
         <h2 class="about-me__title">
           I work with people all over the world to create impressive and
-          <span class="functional">functional</span>
+          <span class="functional accent-color">functional</span>
           <span class="websites">websites</span> that reflect each client's
           unique personality.
         </h2>
@@ -13,99 +13,53 @@
 
       <div class="thumb__img">
         <picture class="about-me__picture">
-          <source
-            media="(max-width: 767px)"
-            srcset="
+          <source media="(max-width: 767px)" srcset="
               ./img/mobile/about_me-343@1x.jpg 1x,
               ./img/mobile/about_me-343@2x.jpg 2x
-            "
-          />
-          <source
-            media="(max-width: 1439px)"
-            srcset="
+            " />
+          <source media="(max-width: 1439px)" srcset="
               ./img/tablet/about_me-704@1x.jpg 1x,
               ./img/tablet/about_me-704@2x.jpg 2x
-            "
-          />
-          <source
-            media="(min-width: 1440px)"
-            srcset="
+            " />
+          <source media="(min-width: 1440px)" srcset="
               ./img/desktop/about_me-680@1x.jpg 1x,
               ./img/desktop/about_me-680@2x.jpg 2x
-            "
-          />
-          <img
-            class="about-me__img"
-            src="./img/desktop/about_me-680@1x.jpg 1x,"
-            alt="about-me"
-          />
+            " />
+          <img class="about-me__img" src="./img/desktop/about_me-680@1x.jpg 1x," alt="about-me" />
         </picture>
       </div>
     </div>
 
-    <ul class="list advantages">
-    </ul>
+    <ul class="list advantages"></ul>
 
-    <div class="skills__container my-swiper swiper">
-      <ul class="skills swiper-wrapper list">
-        <li class="skills__item swiper-slide">
-            <p class="skills__text">
-              HTML/CSS
-            </p>
-            <svg class="skills__icon" width="130" height="130">
-              <use href="./img/icons/sprite.svg#circle"></use>
-            </svg>
-        </li>
-        <li class="skills__item swiper-slide">
-          <p class="skills__text">JavaScript</p>
-            <svg class="skills__icon" width="130" height="130">
-              <use href="./img/icons/sprite.svg#circle"></use>
-          </a>
-        </li>
-        <li class="skills__item swiper-slide">
-          <p class="skills__text">React</p>
-            <svg class="skills__icon" width="130" height="130">
-              <use href="./img/icons/sprite.svg#circle"></use>
-            </svg>
-        </li>
-        <li class="skills__item swiper-slide">
-          <p class="skills__text">Node.js</p>
-          <svg class="skills__icon" width="130" height="130">
-            <use href="./img/icons/sprite.svg#circle"></use>
-          </svg>
-        </li>
-        <li class="skills__item swiper-slide">
-          <p class="skills__text">React Native</p>
-            <svg class="skills__icon" width="130" height="130">
-              <use href="./img/icons/sprite.svg#circle"></use>
-            </svg>
-        </li>
-        <li class="skills__item swiper-slide">
-          <p class="skills__text">Soft skills</p>
-            <svg class="skills__icon" width="130" height="130">
-              <use href="./img/icons/sprite.svg#circle"></use>
-            </svg>
-        </li>
-        <li class="skills__item swiper-slide">
-          <p class="skills__text">Git</p>
-            <svg class="skills__icon" width="130" height="130">
-              <use href="./img/icons/sprite.svg#circle"></use>
-            </svg>
-        </li>
-      </ul>
+    <div class="skills__container">
+      <div class="my-swiper swiper">
+        <ul class="skills swiper-wrapper list">
+          <li class="skills__item swiper-slide">
+            <p class="skills__text">HTML/CSS</p>
+          </li>
+          <li class="skills__item swiper-slide">
+            <p class="skills__text">JavaScript</p>
+          </li>
+          <li class="skills__item swiper-slide">
+            <p class="skills__text">React</p>
+          </li>
+          <li class="skills__item swiper-slide">
+            <p class="skills__text">Node.js</p>
+          </li>
+          <li class="skills__item swiper-slide">
+            <p class="skills__text">React Native</p>
+          </li>
+          <li class="skills__item swiper-slide">
+            <p class="skills__text">Soft skills</p>
+          </li>
+          <li class="skills__item swiper-slide">
+            <p class="skills__text">Git</p>
+          </li>
+        </ul>
 
-      <div class="swiper-button-next">
-        <svg class="skills__arrow" width="28" height="28">
-          <use href="./img/icons/sprite.svg#icon-arrow-right"></use>
-        </svg>
+        <div class="swiper-button-next"></div>
       </div>
-      <!-- <div class="swiper-button-prev">
-        <svg class="skills__arrow" width="28" height="28">
-          <use href="./img/icons/sprite.svg#icon-arrow-left"></use>
-        </svg>
-      </div> -->
-      </div>
+    </div>
   </div>
 </section>
-
-

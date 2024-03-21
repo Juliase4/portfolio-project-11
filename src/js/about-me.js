@@ -38,9 +38,6 @@ function createAdvantagesEl() {
         `<li class="advantages__item">
     <div class="advantages__ac">
       <h2 class="advantages__title">${title}</h2>
-        <svg class="advantages__icon" width="18" height="18">
-          <use href="./img/icons/sprite.svg#icon-arrow-down"></use>
-        </svg>
     </div>
     <div class="advantages__panel">
       <p class="advantages__text about">
@@ -62,13 +59,15 @@ function createAdvantagesEl() {
 
 createAdvantagesEl();
 
-new Accordion(container, {
+const accordion = new Accordion(container, {
   duration: 400,
   showMultiple: true,
   elementClass: 'advantages__item',
   triggerClass: 'advantages__ac',
   panelClass: 'advantages__panel',
 });
+
+accordion.open(0);
 
 const mySwiper = new Swiper('.my-swiper', {
   modules: [Navigation],
@@ -85,13 +84,13 @@ const mySwiper = new Swiper('.my-swiper', {
     pageUpDown: true,
   },
 
-  //Керування колесом миші
-  mousewheel: {
-    //Чутливість колеса миші
-    sensitivity: 1,
-    //Керування колесом миші
-    // eventsTarget: '.swiper-slide',
-  },
+  // // Керування колесом миші
+  // mousewheel: {
+  //   //Чутливість колеса миші
+  //   sensitivity: 1,
+  //   //Керування колесом миші
+  //   eventsTarget: '.swiper-slide',
+  // },
 
   //Кількість слайдів для показу
   slidesPerView: 1,

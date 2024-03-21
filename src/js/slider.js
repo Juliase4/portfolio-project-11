@@ -1,66 +1,32 @@
-// import Swiper JS
 import Swiper from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
 
-const swiper = new Swiper('.reviews .swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: true,
-  navigation: {
-    nextEl: '.reviews .swiper-button-next',
-    prevEl: '.reviews .swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
-
-const slider = document.querySelector('.slider');
-const slides = document.querySelectorAll('.slide');
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
-
-let currentSlide = 0;
-
-function showSlide(slideIndex) {
-  slides.forEach((slide, index) => {
-    if (index === slideIndex) {
-      slide.classList.add('active');
-    } else {
-      slide.classList.remove('active');
-    }
+  const proSwiper = new Swiper('.project-swiper', {
+    modules: [Navigation],
+    navigation: {
+      nextEl: '.project .swiper-button-next',
+      prevEl: '.project .swiper-button-prev',
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+    },
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    breakpoints: {
+      375: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 1,
+      },
+      1440: {
+        slidesPerView: 1,
+      },
+    },
   });
-  updateButtons();
-}
 
-function updateButtons() {
-  prevButton.disabled = currentSlide === 0;
-  nextButton.disabled = currentSlide === slides.length - 1;
-}
-
-prevButton.addEventListener('click', () => {
-  currentSlide--;
-  if (currentSlide < 0) {
-    currentSlide = slides.length - 1;
-  }
-  showSlide(currentSlide);
-});
-
-nextButton.addEventListener('click', () => {
-  currentSlide++;
-  if (currentSlide >= slides.length) {
-    currentSlide = 0;
-  }
-  showSlide(currentSlide);
-});
-
-showSlide(currentSlide);
