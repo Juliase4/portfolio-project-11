@@ -105,12 +105,17 @@ html {
     row-gap: 5px;
     align-items: center;
     white-space: nowrap;
+
+    opacity: 0;   
+
   }
 
   .nav-menu-link {
     letter-spacing: 0.02em;
     color: var(--main-text);
+
     transition: color 250ms linear;
+
   }
 
   .nav-menu-link:hover {
