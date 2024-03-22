@@ -26,7 +26,7 @@ html {
 .logo-name {
   color: var(--main-text);
   font-size: 20px;
-  font-style: medium;
+  font-style: 500;
   margin-left: 8px;
 }
 
@@ -106,7 +106,7 @@ html {
     align-items: center;
     white-space: nowrap;
 
-    opacity: 0;   
+    opacity: 0;
 
   }
 
