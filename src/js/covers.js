@@ -50,18 +50,15 @@
 //   });
 // }
 
-
-
 const coverLists = document.querySelectorAll('.covers-list');
 const coverSection = document.querySelector('.covers-section');
 
-coverLists.forEach(elem=> {
+coverLists.forEach(elem => {
   const coversItems = elem.querySelectorAll('.covers-item');
-  const elementsCount = -coversItems.length * 22 + "%";
+  const elementsCount = -coversItems.length * 22 + '%';
 
   elem.style.setProperty('--elementsCount', elementsCount);
-})
-
+});
 
 function addActiveClass() {
   const sectionRect = coverSection.getBoundingClientRect();
@@ -73,7 +70,6 @@ function addActiveClass() {
     coverSection.classList.remove('animation');
   }
 }
-
 
 addActiveClass();
 
