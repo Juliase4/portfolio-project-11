@@ -24,9 +24,6 @@ html {
 }
 
 .logo-name {
-  color: var(--main-text);
-  font-size: 20px;
-  font-style: 500;
   margin-left: 8px;
 }
 
